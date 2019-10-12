@@ -1,0 +1,927 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: calc(100% - 50px);
+  padding: 0 25px 0;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 4;
+}
+header h1 {
+  font-size: 1.5em;
+  color: white;
+  line-height: 50px;
+  z-index: 5;
+}
+header h1 .roy {
+  color: #4285F4;
+  line-height: 50px;
+}
+header h1 a {
+  text-decoration: none;
+  color: white;
+}
+header nav {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: #171717;
+  position: absolute;
+  left: 0;
+}
+header nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transform: translateY(-50%);
+  top: 45%;
+}
+header nav ul li {
+  list-style: none;
+  margin: 0 20px 0;
+}
+header nav ul li a {
+  color: white;
+  font-size: 4rem;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header nav ul li a:before {
+  animation: wave 2s linear infinite;
+  background-clip: text;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fire-fotos-8e3f9.appspot.com/o/img%2Fwave.png?alt=media&token=16a42c34-7a83-4970-873a-95e50e4d8090");
+  background-position: 0;
+  background-repeat: repeat-x;
+  content: attr(data-text);
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  transition: width 0.5s ease;
+  top: 0;
+  white-space: nowrap;
+  width: 0;
+}
+header nav ul li a:hover:before {
+  width: 100%;
+}
+header .nav-links {
+  display: none;
+  line-height: 75px;
+  z-index: 3;
+}
+header .nav-links a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px 0;
+}
+
+.headerVulcan {
+  background-color: #25282A;
+  width: calc(100% - 50px);
+}
+.headerVulcan h1 {
+  line-height: 35px;
+}
+.headerVulcan .viewLive {
+  font-size: 16px;
+  line-height: 35px;
+  text-decoration: none;
+  color: white;
+  background-color: #f4425a;
+  border-radius: 30px;
+  padding: 2.5px 7.5px;
+  position: relative;
+  bottom: 2px;
+}
+
+.headerOat {
+  background-color: #25282A;
+  width: calc(100% - 50px);
+}
+.headerOat h1 {
+  line-height: 35px;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 4;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  right: -20px;
+  top: 1px;
+}
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: white;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.ham1 .upper {
+  stroke-dasharray: 40 139;
+}
+
+.ham1 .lower {
+  stroke-dasharray: 40 180;
+}
+
+.ham1.active .upper {
+  stroke-dashoffset: -98px;
+}
+
+.ham1.active .lower {
+  stroke-dashoffset: -138px;
+}
+
+@media only screen and (min-width: 1024px) {
+  header h1 {
+    font-size: 1.75em;
+    line-height: 75px;
+  }
+  header nav ul li a {
+    color: rgba(255, 255, 255, 0.1);
+  }
+  header .ham {
+    width: 70px;
+    height: 70px;
+  }
+
+  .headerVulcan h1 {
+    line-height: 50px;
+  }
+  .headerVulcan .viewLive {
+    font-size: 18px;
+    line-height: 50px;
+    border-radius: 50px;
+    padding: 2.5px 10px;
+  }
+
+  .headerOat h1 {
+    line-height: 50px;
+  }
+}
+@keyframes wave {
+  to {
+    background-position: 200px;
+  }
+}
+section {
+  position: relative;
+  width: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.panel {
+  width: 100%;
+  height: 100%;
+}
+
+.pagination {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  bottom: 5px;
+  height: 20px;
+  left: 50%;
+  display: flex;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+.pagination li {
+  transition: all 1s ease-out;
+  list-style: none;
+  margin: 10px 5px 30px;
+  padding: 0;
+  width: 25px;
+  height: 5px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.pagination li:hover {
+  height: 20px;
+}
+.pagination li a {
+  color: transparent;
+  font-size: 2em;
+  background-color: white;
+}
+.pagination .active {
+  height: 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .pagination {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 41%;
+    left: 0;
+    margin: 0 50px 0;
+    width: 50px;
+    height: 50px;
+    transition: all 1s ease;
+    display: block;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+  }
+  .pagination li {
+    transition: all 1s ease;
+    list-style: none;
+    margin: 10px 10px 30px;
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .pagination li:hover {
+    width: 50px;
+    height: 4px;
+  }
+  .pagination li a {
+    color: transparent;
+    font-size: 2em;
+    background-color: white;
+  }
+  .pagination .active {
+    width: 50px;
+    height: 4px;
+  }
+}
+#home {
+  position: relative;
+}
+#home .name {
+  text-transform: lowercase;
+  font-size: 5em;
+  line-height: 90px;
+  position: absolute;
+  bottom: -2.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+#home .name .firstName {
+  color: white;
+}
+#home .name .lastName {
+  color: #4285F4;
+}
+#home .scroll-down {
+  position: fixed;
+  font-size: 0.8em;
+  bottom: 80px;
+  left: 25px;
+  line-height: 1;
+  letter-spacing: 0.3em;
+  writing-mode: vertical-rl;
+  color: #fff;
+  z-index: 1;
+}
+#home .scroll-down:after {
+  content: "";
+  width: 2px;
+  height: 64px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -80px;
+}
+#home .cat, #home .rings {
+  transform: translate(-50%, -50%);
+}
+#home .cat {
+  position: absolute;
+  transition: all 1.75s ease-out;
+  width: 600px;
+  left: 50%;
+  top: 35%;
+}
+#home .rings {
+  position: fixed;
+  transition: all 2s ease-out;
+  width: 1300px;
+  left: 72.5%;
+  top: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  #home .cat {
+    width: 1000px;
+    top: 37.5%;
+  }
+  #home .rings {
+    left: 50%;
+  }
+}
+@media only screen and (width: 375px) and (height: 812px) {
+  #home .cat {
+    width: 900px;
+  }
+}
+@media only screen and (width: 375px) and (height: 667px) {
+  #home .cat {
+    width: 800px;
+  }
+}
+@media only screen and (width: 414px) and (height: 736px) {
+  #home .cat {
+    width: 900px;
+    top: 37.5%;
+  }
+}
+@media only screen and (width: 360px) and (height: 740px) {
+  #home .cat {
+    width: 900px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #home .scroll-down {
+    font-size: 1em;
+    left: 50px;
+  }
+  #home .cat, #home .rings {
+    width: 1600px;
+    left: 72.5%;
+    top: 50%;
+  }
+  #home .cat {
+    position: absolute;
+    transition: 2s all ease-out;
+    top: 50%;
+    width: 1300px;
+  }
+  #home .rings {
+    position: fixed;
+    transition: 1.75s all ease-out;
+  }
+  #home .name {
+    left: 25%;
+    top: 55%;
+    font-size: 7.5em;
+    line-height: 135px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  #home .cat {
+    width: 1400px;
+  }
+  #home .name {
+    font-size: 9em;
+    line-height: 162.5px;
+    top: 50%;
+  }
+}
+.project .projectImage {
+  width: 75%;
+  height: 65%;
+  transition-delay: 0.3s;
+  transition: all 2s ease;
+  position: absolute;
+  right: 0%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  transform: scale(0.75);
+  z-index: 1;
+}
+.project .projectImage .projectTitle {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  bottom: -100px;
+  transform: translate(-50%, -50%);
+  font-size: 1.75em;
+}
+.project .projectImage .projectTitlePrimary {
+  animation-duration: 2s;
+}
+.project .projectImage .projectTitleSecondary {
+  animation-duration: 2s;
+}
+.project .projectImage .projectTitle.oat {
+  left: 7.5%;
+}
+.project .projectImage .projectTitle.vulcan {
+  left: 25%;
+}
+.project .projectImage .projectImageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.project .projectImage .projectImageContainer .projectNumber {
+  color: white;
+  font-size: 4em;
+  position: absolute;
+  bottom: 15%;
+  animation-duration: 2s;
+  font-family: "Abril Fatface", cursive;
+}
+.project .projectImage .projectImageContainer .projectNumber.oat {
+  right: -30px;
+}
+.project .projectImage .projectImageContainer .projectNumber.vulcan {
+  right: -37.5px;
+}
+.project .projectImage .projectImageContainer .catHide {
+  display: none;
+  position: absolute;
+  z-index: -1;
+}
+.project .projectImage .projectImageContainer .catHide.oat {
+  width: 90px;
+  height: 61.92px;
+  right: 25%;
+  top: -61.92px;
+  z-index: -1;
+}
+.project .projectImage .projectImageContainer .catHide.vulcan {
+  height: 70px;
+  width: 48.16px;
+  left: -48.16px;
+  bottom: 45%;
+  z-index: -1;
+}
+.project .projectImage .projectImageContainer.vulcan {
+  background: url("projectVulcan.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.project .projectImage .projectImageContainer.oat {
+  background: url("comingSoon.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.project .projectImage .btn {
+  position: absolute;
+  left: 50%;
+  bottom: -125px;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 50px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  display: none;
+  animation-duration: 2s;
+}
+.project .projectImage .btn.oat {
+  background-color: orange;
+  background-color: #f4425a;
+  animation-duration: 2s;
+}
+.project .projectImage .btn.vulcan {
+  background-color: #4285F4;
+  background-color: #f4425a;
+  animation-duration: 2s;
+}
+.project .expand {
+  transform: scale(1);
+  right: 12.5%;
+  top: 10%;
+}
+
+@media only screen and (min-width: 414px) {
+  .project .projectImage .projectTitle.oat {
+    left: 5%;
+  }
+  .project .projectImage .projectTitle.vulcan {
+    left: 22.5%;
+  }
+  .project .projectImage .btn {
+    bottom: -132.5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .project .projectImage .projectTitle {
+    font-size: 3.25em;
+    bottom: -215px;
+  }
+  .project .projectImage .projectTitle.vulcan {
+    left: 20%;
+  }
+  .project .projectImage .projectImageContainer .projectNumber {
+    font-size: 6em;
+  }
+  .project .projectImage .projectImageContainer .projectNumber.oat {
+    right: -45px;
+  }
+  .project .projectImage .projectImageContainer .projectNumber.vulcan {
+    right: -57.5px;
+  }
+  .project .projectImage .projectImageContainer .catHide.oat {
+    width: 125px;
+    height: 86.1667px;
+    top: -86.1667px;
+  }
+  .project .projectImage .projectImageContainer .catHide.vulcan {
+    height: 125px;
+    width: 86.1667px;
+    left: -86.1667px;
+  }
+  .project .projectImage .btn {
+    padding: 7.5px 25px;
+    font-size: 28px;
+    bottom: -210px;
+  }
+  .project .projectImage .btn.oat {
+    background-color: orange;
+    background-color: #f4425a;
+  }
+  .project .projectImage .btn.vulcan {
+    background-color: #4285F4;
+    background-color: #f4425a;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .project .projectImage {
+    width: 55%;
+    height: 75%;
+    right: -5%;
+    top: 20%;
+    transform: scale(0.75);
+  }
+  .project .projectImage .projectTitle {
+    font-size: 4em;
+  }
+  .project .projectImage .projectTitle.oat {
+    bottom: 27.5%;
+    left: -150px;
+  }
+  .project .projectImage .projectTitle.vulcan {
+    bottom: 27.5%;
+    left: -25px;
+  }
+  .project .projectImage .projectImageContainer .projectNumber {
+    font-size: 7em;
+    right: -6%;
+    bottom: 15%;
+  }
+  .project .projectImage .projectImageContainer .projectNumber.oat {
+    right: -50px;
+  }
+  .project .projectImage .projectImageContainer .projectNumber.vulcan {
+    right: -65px;
+  }
+  .project .projectImage .projectImageContainer .catHide.vulcan {
+    bottom: 15%;
+  }
+  .project .projectImage .btn {
+    bottom: 27.5%;
+  }
+  .project .projectImage .btn.oat {
+    left: -190px;
+  }
+  .project .projectImage .btn.vulcan {
+    left: -175px;
+  }
+  .project .expand {
+    transform: scale(1);
+    right: 7.5%;
+    top: 14%;
+  }
+}
+@media only screen and (min-width: 1366px) {
+  .project .projectImage .projectTitle.oat {
+    left: -225px;
+  }
+  .project .projectImage .projectTitle.vulcan {
+    left: -215px;
+  }
+  .project .projectImage .btn.oat {
+    left: -265px;
+  }
+  .project .projectImage .btn.vulcan {
+    left: -365px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .project .projectImage .projectTitle.oat {
+    left: -290px;
+  }
+  .project .projectImage .projectTitle.vulcan {
+    left: -275px;
+  }
+  .project .projectImage .btn.oat {
+    left: -330px;
+  }
+  .project .projectImage .btn.vulcan {
+    left: -425px;
+  }
+}
+.about {
+  color: white;
+}
+.about .catHide.about {
+  display: none;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.about .catHideWink.about {
+  display: none;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.about .aboutContent {
+  display: none;
+  position: absolute;
+  width: 80%;
+  max-width: 700px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about .aboutContent h1 {
+  display: none;
+  font-size: 2.5em;
+  text-align: center;
+  position: relative;
+}
+.about .aboutContent h1:before {
+  content: "";
+  width: 80px;
+  height: 2.5px;
+  background-color: #4285F4;
+  position: absolute;
+  margin: auto;
+  bottom: -15px;
+  left: calc(45% + 40px);
+  border-radius: 50px;
+  transform: translate(-50%, -50%);
+}
+.about .aboutContent h1:after {
+  content: "";
+  width: 80px;
+  height: 2.5px;
+  background-color: #4285F4;
+  position: absolute;
+  margin: auto;
+  bottom: -5px;
+  left: 45%;
+  border-radius: 50px;
+  transform: translate(-50%, -50%);
+}
+.about .aboutContent .tagline {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 50px 0;
+}
+.about .aboutContent .toolbox {
+  margin: 0 0 30px;
+  font-size: 1.1em;
+}
+.about .aboutContent .toolbox h3 {
+  margin: 10px 0;
+  font-size: 1.25em;
+}
+.about .aboutContent .toolbox .techStack {
+  margin: 50px 0;
+}
+.about .aboutContent .toolbox .designStack {
+  margin: 50px 0;
+}
+.about .aboutContent .btn {
+  display: block;
+  top: 0;
+  width: 120px;
+  margin: 0 auto;
+  font-size: 24px;
+  text-decoration: none;
+  background-color: #f4425a;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 50px;
+  text-align: center;
+  transition: 0.5s all ease;
+}
+.about .aboutContent .btn:hover {
+  top: -1%;
+}
+
+@media only screen and (min-width: 768px) {
+  .about .aboutContent {
+    width: 60%;
+  }
+  .about .aboutContent h1 {
+    font-size: 3.5em;
+  }
+  .about .aboutContent .tagline {
+    font-size: 2em;
+    margin: 75px 0;
+  }
+  .about .aboutContent .toolbox {
+    margin: 0 0 75px;
+  }
+  .about .aboutContent .toolbox h3 {
+    font-size: 1.35em;
+  }
+  .about .aboutContent .toolbox .techStack {
+    margin: 75px 0;
+    font-size: 1.2em;
+  }
+  .about .aboutContent .toolbox .designStack {
+    margin: 75px 0;
+    font-size: 1.2em;
+  }
+  .about .aboutContent .btn {
+    width: 140px;
+    font-size: 24px;
+    padding: 7.5px 25px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .about .aboutContent .btn {
+    padding: 7.5px 25px;
+    font-size: 28px;
+  }
+}
+.projectOat {
+  background-color: #25282A;
+  color: white;
+}
+.projectOat .projectBanner.oat {
+  background: url("comingSoon.jpg");
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+}
+.projectOat .content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+.projectOat .content h1 {
+  text-transform: uppercase;
+}
+.projectOat .content h1:before {
+  display: inline-block;
+  content: "";
+  border-top: 2px solid white;
+  position: relative;
+  top: 6px;
+  width: 30px;
+  margin: 0 20px 0 0;
+  transform: translateY(-1rem);
+}
+.projectOat .content h1 .headingNum {
+  color: #f4425a;
+}
+.projectOat .content p {
+  width: 72.5%;
+  margin: 50px auto;
+  opacity: 0.75;
+}
+.projectOat .content a {
+  text-decoration: none;
+  color: #4285F4;
+}
+.projectOat .content .wireframes.oat {
+  width: 275px;
+  height: auto;
+  margin: 50px auto;
+}
+
+.projectVulcan {
+  background-color: #25282A;
+  color: white;
+}
+.projectVulcan .projectBanner.vulcan {
+  background: url("projectVulcanBanner.jpg");
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+}
+.projectVulcan .content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+.projectVulcan .content h1 {
+  text-transform: uppercase;
+}
+.projectVulcan .content h1:before {
+  display: inline-block;
+  content: "";
+  border-top: 2px solid white;
+  position: relative;
+  top: 6px;
+  width: 30px;
+  margin: 0 20px 0 0;
+  transform: translateY(-1rem);
+}
+.projectVulcan .content h1 .headingNum {
+  color: #f4425a;
+}
+.projectVulcan .content p {
+  width: 72.5%;
+  margin: 50px auto;
+  opacity: 0.75;
+}
+.projectVulcan .content a {
+  text-decoration: none;
+  color: #4285F4;
+}
+.projectVulcan .content .codepen {
+  width: 100%;
+  height: 450px;
+}
+.projectVulcan .content video {
+  margin: 50px auto;
+}
+
+.smooth {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.bar {
+  width: 5%;
+  height: 100%;
+  background-color: white;
+}
+
+canvas {
+  position: fixed;
+  background-image: linear-gradient(to bottom, #142642, #101f34, #0e1827, #08101a, #00040b);
+}
+
+i {
+  border: solid #f4425a;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  position: relative;
+  bottom: 2.75px;
+  padding: 3px;
+}
+
+.left {
+  transform: rotate(135deg);
+}
+
+.top {
+  display: none;
+  border: none;
+  background-color: black;
+  position: fixed;
+  z-index: 88;
+  bottom: 0;
+  right: 25px;
+  padding: 0 10px;
+}
+.top .fa-angle-up {
+  fill: red;
+}
+
+@media only screen and (min-width: 1024px) {
+  i {
+    padding: 4px;
+    bottom: 3px;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */

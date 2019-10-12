@@ -1,0 +1,153 @@
+.about{
+    color: white;
+    .catHide.about{
+        display:none;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .catHideWink.about{
+        display:none;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .aboutContent{
+        display:none;
+        position: absolute;
+        width: 80%;
+        max-width: 700px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        h1 {
+            display:none;
+            font-size: 2.5em;
+            text-align: center;
+            position: relative;
+    
+            &:before {
+                content: "";
+                width: 80px;
+                height: 2.5px;
+                background-color: #4285F4;
+                position: absolute;
+                margin: auto;
+                bottom: -15px;
+                left: calc(45% + 40px);
+                border-radius: 50px;
+                transform: translate(-50%, -50%);
+            }
+            
+            &:after {
+                content: "";
+                width: 80px;
+                height: 2.5px;
+                background-color: #4285F4;
+                position: absolute;
+                margin: auto;
+                bottom: -5px;
+                left: 45%;
+                border-radius: 50px;
+                transform: translate(-50%, -50%);
+            }
+        }
+        
+        .tagline {
+            font-size: 1.5em;
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .toolbox{
+            margin: 0 0 30px;
+            font-size: 1.1em;
+
+            h3 {
+                margin: 10px 0;
+                font-size: 1.25em;
+            }
+            
+            .techStack{
+                margin: 50px 0;
+            }
+
+            .designStack{
+                margin: 50px 0 ;
+            }
+        }
+
+        .btn {
+            display: block;
+            top: 0;
+            width: 120px;
+            margin: 0 auto;
+            font-size: 24px;
+            text-decoration: none;
+            background-color: rgb(244, 66, 90);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 50px;
+            text-align: center;
+            transition: 0.5s all ease;
+        }
+
+        .btn:hover {
+            top: -1%;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .about{
+        .aboutContent{
+            width: 60%;
+            h1{
+                font-size: 3.5em;
+            }
+
+            .tagline{
+                font-size: 2em;
+                margin: 75px 0;
+            }
+
+            .toolbox{
+                margin: 0 0 75px;
+
+                h3{
+                    font-size: 1.35em;
+                }
+                
+                .techStack{
+                    margin: 75px 0;
+                    font-size: 1.2em;
+                }
+    
+                .designStack{
+                    margin: 75px 0;
+                    font-size: 1.2em;
+                }
+            }
+
+            .btn {
+                width: 140px;
+                font-size: 24px;
+                padding: 7.5px 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .about{
+        .aboutContent{
+            .btn{
+                padding: 7.5px 25px;
+                font-size: 28px;
+            }
+        }
+    }
+}

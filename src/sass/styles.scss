@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+@import "navigation";
+@import "panels";
+@import "pagination";
+
+@import "home";
+@import "projects";
+@import "about";
+
+@import "oat";
+@import "vulcan";
+
+.smooth{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 ,h4 ,h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.bar {
+  width: 5%;
+  height: 100%;
+  background-color: white;
+}
+
+canvas {
+    // display: none;
+    position: fixed;
+    background-image: linear-gradient(to bottom, #142642, #101f34, #0e1827, #08101a, #00040b);  
+}
+
+i {
+  border: solid rgb(244, 66, 90);
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  position: relative;
+  bottom: 2.75px;
+  padding: 3px;
+}
+
+.left {
+  transform: rotate(135deg);
+}
+
+.top {
+  display: none;
+  border: none;
+  background-color: black;
+  position: fixed;
+  z-index: 88;
+  bottom: 0;
+  right: 25px;
+  padding: 0 10px;
+
+  .fa-angle-up {
+    fill: red;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  i{
+    padding: 4px;
+    bottom: 3px;
+  }
+}

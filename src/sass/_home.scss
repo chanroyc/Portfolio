@@ -1,0 +1,188 @@
+#home {
+    position: relative;
+
+    .name {
+        text-transform: lowercase;
+        font-size: 5em;
+        line-height: 90px;
+        position: absolute;
+        bottom: -2.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
+
+        .firstName{
+            color: white;
+        }
+        .lastName{
+            color: #4285F4;
+        }
+    }
+
+    .scroll-down{
+        position: fixed;
+        font-size: 0.8em;
+        bottom: 80px;
+        left: 25px;
+        line-height: 1;
+        letter-spacing: 0.3em;
+        writing-mode: vertical-rl;
+        color: #fff;
+        z-index: 1;
+    }
+      
+    .scroll-down:after{
+        content: "";
+        width: 2px;
+        height: 64px;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: -80px;
+    }
+
+    .cat, .rings{
+        transform: translate(-50%, -50%);
+    }
+
+    .cat{
+        position: absolute;
+        transition: all 1.75s ease-out;
+        width: 600px;
+        left: 50%;
+        top: 35%;
+    }
+
+    .rings{
+        position:fixed;
+        transition: all 2s ease-out;
+        width: 1300px;
+        left: 72.5%;
+        top: 50%;
+    }
+}
+
+@media only screen and (min-width: 414px){
+    #home{
+
+
+        .cat{
+        
+        }
+        
+        .rings{
+            
+        }
+    }
+}
+
+@media only screen and (min-width: 414px){
+    #home{
+
+    }
+}
+
+@media only screen and (min-width: 768px){
+    #home{
+
+
+        .cat {
+            width: 1000px;
+            top: 37.5%;
+        }
+
+        .rings {
+            left: 50%;
+        }
+    }
+}
+
+//iPhone X/XS
+@media only screen and (width: 375px) and (height: 812px){
+    #home {
+        .cat {
+            width: 900px;;
+        }
+    }
+}
+
+//iPhone 6/7/8
+@media only screen and (width: 375px) and (height: 667px){
+    #home {
+        .cat {
+            width: 800px;
+        }
+    }
+}
+
+//iPhone 6/7/8 Plus
+@media only screen and (width: 414px) and (height: 736px){
+    #home {
+        .cat{
+            width: 900px;
+            top: 37.5%;
+        }
+    }
+}
+
+//S9/S9+
+@media only screen and (width: 360px) and (height: 740px){
+    #home{
+        .cat{
+            width: 900px;
+
+        }
+    }
+}
+
+//PC Screens+
+@media only screen and (min-width: 1024px){
+    #home{
+        .scroll-down{
+            font-size: 1em;
+            left: 50px;
+        }
+
+        .cat, .rings {
+            width: 1600px;
+            left: 72.5%;
+            top: 50%;
+          }
+          
+        .cat {
+            position: absolute;
+            transition: 2s all ease-out;
+            top: 50%;
+            width: 1300px;
+        }
+        
+        .rings{
+            position: fixed;
+            transition: 1.75s all ease-out;
+        }
+
+        .name{
+            left: 25%;
+            top: 55%;
+            font-size: 7.5em;
+            line-height: 135px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px){
+    #home{
+        .cat {
+            width: 1400px;
+        }
+
+        .name {
+            font-size: 9em;
+            line-height: 162.5px;
+            top: 50%;
+        }
+    }
+}

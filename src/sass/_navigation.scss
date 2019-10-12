@@ -1,0 +1,213 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: calc(100% - 50px);
+    padding: 0 25px 0;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 4;
+
+    h1 {
+        font-size: 1.5em;
+        color: white;
+        line-height: 50px;
+        z-index: 5;
+
+        .roy {
+            color: #4285F4;
+            line-height: 50px;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+          
+    nav {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #171717;
+        position: absolute;
+        left: 0;
+
+        ul{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            transform: translateY(-50%);
+            top: 45%;
+
+            li {
+                list-style: none;
+                margin: 0 20px 0;
+
+                a {
+                    color: white;
+                    font-size: 4rem;
+                    position: relative;
+                    text-decoration: none;
+                    text-transform: uppercase;
+
+                    &:before{
+                        animation: wave 2s linear infinite;
+	                    background-clip: text;
+                        background-image: url('https://firebasestorage.googleapis.com/v0/b/fire-fotos-8e3f9.appspot.com/o/img%2Fwave.png?alt=media&token=16a42c34-7a83-4970-873a-95e50e4d8090');
+                        background-position: 0;
+                        background-repeat: repeat-x;
+                        content: attr(data-text);
+                        left: 0;
+                        overflow: hidden;
+                        position: absolute;
+                        transition: width 0.5s ease;
+                        top: 0;
+                        white-space: nowrap;
+                        width: 0;
+                    }
+
+                    &:hover:before{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    } 
+
+    .nav-links {
+        display: none;
+        line-height: 75px;
+        z-index: 3;
+        
+        a{
+            text-decoration: none;
+            color: white;
+            margin: 0 10px 0;
+        }
+    }
+}
+
+.headerVulcan{
+    background-color: #25282A;
+    width: calc(100% - 50px);
+    
+    h1{
+        line-height: 35px;
+    }
+
+    .viewLive {
+        font-size: 16px;
+        line-height: 35px;
+        text-decoration: none;
+        color: white;
+        background-color: rgba(244, 66, 90,1);
+        border-radius: 30px;
+        padding: 2.5px 7.5px;
+        position: relative;
+        bottom: 2px;
+    }
+}
+
+.headerOat{
+    background-color: #25282A;
+    width: calc(100% - 50px);
+
+    h1{
+        line-height: 35px;
+    }
+}
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 4;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    right: -20px;
+    top: 1px;
+}
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+.line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: white;
+    stroke-width:5.5;
+    stroke-linecap:round;
+}
+.ham1 .upper {
+    stroke-dasharray: 40 139;
+}
+.ham1 .lower {
+    stroke-dasharray: 40 180;
+}
+.ham1.active .upper {
+    stroke-dashoffset: -98px;
+}
+.ham1.active .lower {
+    stroke-dashoffset: -138px;
+}
+
+@media only screen and (min-width: 1024px){
+    header {
+        h1{
+            font-size: 1.75em;
+            line-height: 75px;
+        }
+
+        nav{
+            ul{
+                li{
+                    a{
+                        color: rgba(255, 255, 255, 0.1);
+                    }
+                }
+            }
+        }
+
+        .ham{
+            width: 70px;
+            height: 70px;
+        }
+    }
+    
+    .headerVulcan{
+        h1{
+            line-height: 50px;
+        }
+
+        .viewLive {
+            font-size: 18px;
+            line-height: 50px;
+            border-radius: 50px;
+            padding: 2.5px 10px;
+        }
+    }
+    
+    .headerOat{
+        h1{
+            line-height: 50px;
+        }
+    }
+}
+
+@keyframes wave {
+	to {
+		background-position: 200px;
+	}
+}

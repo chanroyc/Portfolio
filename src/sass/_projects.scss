@@ -1,0 +1,324 @@
+.project {
+    .projectImage{
+        width: 75%;
+        height: 65%;
+        transition-delay: 0.3s;
+        transition: all 2s ease;
+        position: absolute;
+        right: 0%;
+        top: 20%;
+        transform: translate(-50%, -50%);
+        transform: scale(0.75);
+        z-index: 1;
+
+        .projectTitle{
+            position: absolute;
+            color: white;
+            z-index: 1;
+            bottom: -100px;
+            transform: translate(-50%, -50%);
+            font-size: 1.75em;
+        }
+
+        .projectTitlePrimary{
+            animation-duration: 2s;
+        }
+
+        .projectTitleSecondary{
+            animation-duration: 2s;
+        }
+
+        .projectTitle.oat{
+            left: 7.5%;
+        }
+
+        .projectTitle.vulcan{
+            left: 25%;
+        }
+
+        .projectImageContainer {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            .projectNumber {
+                color: white;
+                font-size: 4em;
+                position: absolute;
+                bottom: 15%;
+                animation-duration: 2s;
+                font-family: 'Abril Fatface', cursive;
+            }
+
+            .projectNumber.oat{
+                right: -30px;
+            }
+
+            .projectNumber.vulcan{
+                right: -37.5px;
+            }
+
+            .catHide{
+                display: none;
+                position:absolute;
+                z-index: -1;
+            }
+
+            .catHide.oat{
+                width: 90px;
+                height: 61.92px;
+                right: 25%;
+                // top: -86.1667px;
+                top: -61.92px;
+                z-index: -1;
+            }
+
+            .catHide.vulcan{
+                // height: 125px;
+                // width: 86.1667px;
+                // left: -86.1667px;
+                height: 70px;
+                width: 48.16px;
+                left: -48.16px;
+                bottom: 45%;
+                z-index: -1;
+            }
+        }
+
+        .projectImageContainer.vulcan {
+            background: url("projectVulcan.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .projectImageContainer.oat {
+            background: url("comingSoon.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .btn {
+            position: absolute;
+            left: 50%;
+            bottom: -125px;
+            font-size: 24px;
+            text-decoration: none;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 50px;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            display: none;
+            animation-duration: 2s;
+        }
+
+        .btn:hover {
+            // top: -1%;
+        }
+
+        .btn.oat{
+            background-color:orange;
+            background-color: rgb(244, 66, 90);
+            animation-duration: 2s;
+        }
+
+        .btn.vulcan{
+            background-color: #4285F4;
+            background-color: rgb(244, 66, 90);
+            animation-duration: 2s;
+        }
+    }
+
+    .expand {
+        transform: scale(1);
+        right: 12.5%;
+        top: 10%;
+    }
+}
+
+@media only screen and (min-width: 414px){
+    .project {
+        .projectImage{
+            .projectTitle.oat{
+                left: 5%;
+            }
+
+            .projectTitle.vulcan{
+                left: 22.5%;
+            }
+
+            .btn{
+                bottom: -132.5px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .project{
+        .projectImage{
+            .projectTitle{
+                font-size: 3.25em;
+                bottom: -215px;
+            }
+
+            .projectTitle.vulcan{
+                left: 20%;
+            }
+
+            .projectImageContainer{
+                .projectNumber{
+                    font-size: 6em;
+                }
+
+                .projectNumber.oat{
+                    right: -45px;
+                }
+    
+                .projectNumber.vulcan{
+                    right: -57.5px;
+                }
+
+                .catHide.oat{
+                    width: 125px;
+                    height: 86.1667px;
+                    top: -86.1667px;
+                }
+
+                .catHide.vulcan{
+                    height: 125px;
+                    width: 86.1667px;
+                    left: -86.1667px;
+                }
+            }
+
+            .btn {
+                padding: 7.5px 25px;
+                font-size: 28px;
+                bottom: -210px;
+            }
+    
+            .btn:hover {
+                // top: -1%;
+            }
+    
+            .btn.oat{
+                background-color:orange;
+                background-color: rgb(244, 66, 90);
+            }
+    
+            .btn.vulcan{
+                background-color: #4285F4;
+                background-color: rgb(244, 66, 90);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .project {
+        .projectImage{
+            width: 55%;
+            height: 75%;
+            right: -5%;
+            top: 20%;
+            transform: scale(0.75);
+
+            .projectTitle{
+                font-size: 4em;
+            }
+
+            .projectTitle.oat{
+                bottom: 27.5%;
+                left: -150px;
+            }
+
+            .projectTitle.vulcan{
+                bottom: 27.5%;
+                left: -25px;
+            }
+    
+            .projectImageContainer {
+                .projectNumber {
+                    font-size: 7em;
+                    right: -6%;
+                    bottom: 15%;
+                }
+
+                .projectNumber.oat{
+                    right: -50px;
+                }
+    
+                .projectNumber.vulcan{
+                    right: -65px;
+                }
+    
+                .catHide.vulcan{
+                    bottom: 15%;
+                }
+            }
+
+            .btn{
+                bottom: 27.5%;          
+            }
+
+            .btn.oat{
+                left: -190px;
+            }
+
+            .btn.vulcan{
+                left: -175px;
+            }
+        }
+    
+        .expand {
+            transform: scale(1);
+            right: 7.5%;
+            top: 14%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1366px){
+    .project{
+        .projectImage{
+            .projectTitle.oat{
+                left: -225px;
+            }
+
+            .projectTitle.vulcan{
+                left: -215px;
+            }
+
+            .btn.oat{
+                left: -265px;
+            }
+
+            .btn.vulcan{
+                left: -365px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px){
+    .project{
+        .projectImage{
+            .projectTitle.oat{
+                left: -290px;
+
+            }
+            .projectTitle.vulcan{
+                left: -275px;
+            }
+
+            .btn.oat{
+                left: -330px;
+            }
+
+            .btn.vulcan{
+                left: -425px;
+            }
+        }
+    }
+}
