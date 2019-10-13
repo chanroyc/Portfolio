@@ -42,7 +42,7 @@ header nav ul {
   align-items: center;
   position: relative;
   transform: translateY(-50%);
-  top: 45%;
+  top: 40%;
 }
 header nav ul li {
   list-style: none;
@@ -73,15 +73,16 @@ header nav ul li a:before {
 header nav ul li a:hover:before {
   width: 100%;
 }
-header .nav-links {
-  display: none;
-  line-height: 75px;
-  z-index: 3;
+header .socialLinks {
+  flex-direction: row;
+  justify-content: center;
 }
-header .nav-links a {
-  text-decoration: none;
-  color: white;
-  margin: 0 10px 0;
+header .socialLinks li a svg {
+  width: 48px;
+  height: 48px;
+}
+header .socialLinks li a svg:hover {
+  fill: black;
 }
 
 .headerVulcan {
@@ -720,7 +721,7 @@ section {
   margin: 0 auto;
   font-size: 24px;
   text-decoration: none;
-  background-color: #f4425a;
+  background-color: grey;
   color: white;
   padding: 5px 15px;
   border-radius: 50px;
@@ -861,9 +862,6 @@ section {
 .projectVulcan .content .codepen {
   width: 100%;
   height: 450px;
-}
-.projectVulcan .content video {
-  margin: 50px auto;
 }
 
 .smooth {

@@ -41,7 +41,7 @@ class About extends Component {
                             </div>
                         </div>
 
-                        <a href='about.html' className='btn about'>Read More</a>
+                        <a href='#about' className='btn about'>Read More</a>
                     </div>
                 </section>
             </>

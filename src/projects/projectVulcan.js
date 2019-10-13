@@ -17,7 +17,7 @@ class projectVulcan extends Component {
                     <div className='projectBanner vulcan'></div>
                     <div className='content'>
                         <h1><span className='headingNum'>01</span> Overview</h1>
-                        <p>Using pre-designed mock-ups of Vulcan Industries' website, <a href="https://stevecodeguy.com/">Steve</a> and I created a fully reponsive web page. This project was version controlled and stored on <a href="https://github.com/chanroyc/Vulcan-Industries">our team's repository</a>.</p>
+                        <p>Using pre-designed mock-ups of <a href='https://vulcanindustries.com/' rel='nofollow'>Vulcan Industries' website</a>, <a href="https://stevecodeguy.com/">Steve</a> and I created a fully reponsive web page. This project was version controlled and stored on <a href="https://github.com/chanroyc/Vulcan-Industries">our team's repository</a>.</p>
 
                         <h1><span className='headingNum'>02</span> Team</h1>
                         <p>
@@ -29,7 +29,9 @@ class projectVulcan extends Component {
                         <p>HTML, CSS, Sass, JavaScript, jQuery, gulp.js</p>
 
                         <h1><span className='headingNum'>04</span> Code</h1>
-                        <p>Created a carousel image gallery for the front page with jQuery.</p>
+                        <p>The front page of the website contains a slideshow. I did not have to reinvent the wheel, but, I thought it would be fun to create my own. The slideshow features a previous/next button and pagination.</p>
+                        <p>I encountered some challenges and time constraints while creating the slideshow which led to the code being inefficient. One of the challenges was repeated clicks on the previous/next button immediately moving to the next slide before the slide animation is completed. I created a variable that tracks whether a button is clicked to prevent users from repeatedly clicking the buttons before the animation completes.</p>
+                        <p>The showSlides() and prevSlides() functions could be condensed into 1 function to improve code efficiency and optimization.</p>
 
                         <p>
                             <iframe height="265" scrolling="no" title="Slideshow" src="https://codepen.io/chanroyc-the-looper/embed/abbbVmb?height=265&theme-id=dark&default-tab=js,result" frameBorder="no" allowtransparency="true" allowFullScreen={true} className='codepen'>
@@ -39,6 +41,8 @@ class projectVulcan extends Component {
                         </p>
 
                         <h1><span className='headingNum'>05</span> Showcase</h1>
+
+                        <p>The following video shows the responsiveness of the website. The page is optimized for all devices. Check out the live demo website <a href='https://vulcan.chanroyc.ca/'>here</a>.</p>
 
                         <video width="100%" height="100%" controls>
                             <source src='/images/vulcan.mp4' type="video/mp4" />

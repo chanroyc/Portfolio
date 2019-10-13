@@ -96,6 +96,10 @@ $(function() {
         }
 
         if (ref==='about'){
+          $.scrollify.setOptions({
+            scrollSpeed: 3000,
+          });
+
           $('.catHide.about').delay(500).fadeIn(1500);
           $('.catHide.about').addClass('animated slideInUp');
 
@@ -114,6 +118,10 @@ $(function() {
             },500)
           }, 1500)
         }else{
+          $.scrollify.setOptions({
+            scrollSpeed: 2000,
+          });
+
           $('.catHide.about').removeClass('animated slideOutDown');
           $('.catHideWink.about').removeClass('animated slideOutDown');
           $('.catHideWink.about').hide();
@@ -156,7 +164,6 @@ $(function() {
         $('.nav-about').on('click', function(){
           $.scrollify.currentIndex = 0;
           $.scrollify.move("#about");
-
         });
       },
     });
