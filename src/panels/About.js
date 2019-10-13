@@ -27,7 +27,7 @@ class About extends Component {
                                 WordPress,
                                 React.js,
                                 mySQL,
-                                express.js,
+                                Express.js,
                                 Node.js
                             </div>
 
@@ -35,13 +35,13 @@ class About extends Component {
                                 <h3>Design Stack</h3>
                                 Photoshop,
                                 Illustrator,
-                                Adobe Xd,
+                                Adobe XD,
                                 InVision,
                                 Balsamiq
                             </div>
                         </div>
 
-                        <a href='#about' className='btn about'>Read More</a>
+                        {/* <a href='#about' className='btn about'>Read More</a> */}
                     </div>
                 </section>
             </>

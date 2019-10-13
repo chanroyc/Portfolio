@@ -33,7 +33,7 @@
                 content: "";
                 width: 80px;
                 height: 2.5px;
-                background-color: #4285F4;
+                background-color: $blue;
                 position: absolute;
                 margin: auto;
                 bottom: -15px;
@@ -46,7 +46,7 @@
                 content: "";
                 width: 80px;
                 height: 2.5px;
-                background-color: #4285F4;
+                background-color: $blue;
                 position: absolute;
                 margin: auto;
                 bottom: -5px;
@@ -87,8 +87,7 @@
             margin: 0 auto;
             font-size: 24px;
             text-decoration: none;
-            // background-color: rgb(244, 66, 90);
-            background-color: grey;
+            background-color: rgb(244, 66, 90);
             color: white;
             padding: 5px 15px;
             border-radius: 50px;

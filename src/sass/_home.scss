@@ -1,22 +1,52 @@
 #home {
     position: relative;
 
-    .name {
-        text-transform: lowercase;
-        font-size: 5em;
-        line-height: 90px;
-        position: absolute;
-        bottom: -2.5%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        z-index: 1;
+    // .name {
+    //     text-transform: lowercase;
+    //     font-size: 5em;
+    //     line-height: 90px;
+    //     position: absolute;
+    //     bottom: -2.5%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     text-align: center;
+    //     z-index: 1;
 
-        .firstName{
+    //     .firstName{
+    //         color: white;
+    //     }
+    //     .lastName{
+    //         color: $blue;
+    //     }
+    // }
+
+    .intro{
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -50%);
+        width: 375px;
+        
+        h1 {
             color: white;
+            text-align: center;
         }
-        .lastName{
-            color: #4285F4;
+    
+        .name{
+            font-size: 5em;
+            color: $blue;
+            display: none;
+    
+            img{
+                width: 50px;
+                margin: 0 10px;
+            }
+        }
+    
+        .sub {
+            .and {
+                color: $flamingo;
+            }
         }
     }
 
@@ -67,8 +97,6 @@
 
 @media only screen and (min-width: 414px){
     #home{
-
-
         .cat{
         
         }
@@ -87,8 +115,6 @@
 
 @media only screen and (min-width: 768px){
     #home{
-
-
         .cat {
             width: 1000px;
             top: 37.5%;
@@ -164,11 +190,27 @@
             transition: 1.75s all ease-out;
         }
 
-        .name{
-            left: 25%;
-            top: 55%;
-            font-size: 7.5em;
-            line-height: 135px;
+        // .name{
+        //     left: 25%;
+        //     top: 55%;
+        //     font-size: 7.5em;
+        //     line-height: 135px;
+        // }
+
+        .intro{
+            width: 500px;
+            h1{
+                font-size: 2em;
+            }
+
+            .name{
+                font-size: 10em;
+
+                img{
+                    width: 100px;
+                    margin: 0 20px;
+                }
+            }
         }
     }
 }
@@ -179,10 +221,10 @@
             width: 1400px;
         }
 
-        .name {
-            font-size: 9em;
-            line-height: 162.5px;
-            top: 50%;
-        }
+        // .name {
+        //     font-size: 9em;
+        //     line-height: 162.5px;
+        //     top: 50%;
+        // }
     }
 }

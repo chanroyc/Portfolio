@@ -2,7 +2,6 @@ import $ from 'jquery';
 import 'jquery-ui';
 
 $(function() {
-
     // $('body').mousemove(function(e){
     //   let amountMovedX = (e.pageX* -1/300);
     //   let amountMovedY = (e.pageY* -1/300);
@@ -36,11 +35,15 @@ $(function() {
           $('.scroll-down').addClass('slideInUp');
           $('.scroll-down').fadeIn();
 
+          $('.name').fadeIn(2000);
+
           $('.cat').show();
         }else{
           $('.scroll-down').removeClass('slideInUp');
           $('.scroll-down').addClass('slideOutDown');
           $('.scroll-down').fadeOut();
+
+          $('.name').fadeOut();
         }
 
         if(ref==='oat'){
@@ -156,7 +159,7 @@ $(function() {
           $.scrollify.move("#home");
         });
 
-        $('.nav-works').on('click', function(){
+        $('.nav-work').on('click', function(){
           $.scrollify.currentIndex = 0;
           $.scrollify.move("#oat");
         });

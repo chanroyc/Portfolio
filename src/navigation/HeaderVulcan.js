@@ -6,7 +6,7 @@ class HeaderVulcan extends Component {
             <>
                 <header className='headerVulcan'>
                     <h1><a href='/#vulcan' className='logo vulcan'><i className="arrow left"></i> Vulcan Industries</a></h1>
-                    <h1><a href='https://vulcan.chanroyc.ca' className='viewLive'>View Live</a></h1>
+                    <h1><a href='https://vulcan.chanroyc.ca' className='viewLive' target="_blank">View Live</a></h1>
                 </header>
             </>
         )

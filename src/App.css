@@ -19,7 +19,7 @@ header h1 {
   z-index: 5;
 }
 header h1 .roy {
-  color: #4285F4;
+  color: #1ab6ff;
   line-height: 50px;
 }
 header h1 a {
@@ -49,7 +49,7 @@ header nav ul li {
   margin: 0 20px 0;
 }
 header nav ul li a {
-  color: white;
+  color: rgba(255, 255, 255, 0.1);
   font-size: 4rem;
   position: relative;
   text-decoration: none;
@@ -68,7 +68,7 @@ header nav ul li a:before {
   transition: width 0.5s ease;
   top: 0;
   white-space: nowrap;
-  width: 0;
+  width: 100%;
 }
 header nav ul li a:hover:before {
   width: 100%;
@@ -97,7 +97,7 @@ header .socialLinks li a svg:hover {
   line-height: 35px;
   text-decoration: none;
   color: white;
-  background-color: #f4425a;
+  background-color: #4285F4;
   border-radius: 30px;
   padding: 2.5px 7.5px;
   position: relative;
@@ -110,6 +110,17 @@ header .socialLinks li a svg:hover {
 }
 .headerOat h1 {
   line-height: 35px;
+}
+.headerOat .viewLive {
+  font-size: 16px;
+  line-height: 35px;
+  text-decoration: none;
+  color: white;
+  background-color: #4285F4;
+  border-radius: 30px;
+  padding: 2.5px 7.5px;
+  position: relative;
+  bottom: 2px;
 }
 
 .ham {
@@ -160,13 +171,17 @@ header .socialLinks li a svg:hover {
   stroke-dashoffset: -138px;
 }
 
+.active .line {
+  stroke: #1ab6ff;
+}
+
 @media only screen and (min-width: 1024px) {
   header h1 {
     font-size: 1.75em;
     line-height: 75px;
   }
-  header nav ul li a {
-    color: rgba(255, 255, 255, 0.1);
+  header nav ul li a:before {
+    width: 0;
   }
   header .ham {
     width: 70px;
@@ -279,21 +294,27 @@ section {
 #home {
   position: relative;
 }
-#home .name {
-  text-transform: lowercase;
-  font-size: 5em;
-  line-height: 90px;
+#home .intro {
   position: absolute;
-  bottom: -2.5%;
   left: 50%;
+  top: 45%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 1;
+  width: 375px;
 }
-#home .name .firstName {
+#home .intro h1 {
   color: white;
+  text-align: center;
 }
-#home .name .lastName {
+#home .intro .name {
+  font-size: 5em;
+  color: #1ab6ff;
+  display: none;
+}
+#home .intro .name img {
+  width: 50px;
+  margin: 0 10px;
+}
+#home .intro .sub .and {
   color: #4285F4;
 }
 #home .scroll-down {
@@ -386,21 +407,23 @@ section {
     position: fixed;
     transition: 1.75s all ease-out;
   }
-  #home .name {
-    left: 25%;
-    top: 55%;
-    font-size: 7.5em;
-    line-height: 135px;
+  #home .intro {
+    width: 500px;
+  }
+  #home .intro h1 {
+    font-size: 2em;
+  }
+  #home .intro .name {
+    font-size: 10em;
+  }
+  #home .intro .name img {
+    width: 100px;
+    margin: 0 20px;
   }
 }
 @media only screen and (min-width: 1600px) {
   #home .cat {
     width: 1400px;
-  }
-  #home .name {
-    font-size: 9em;
-    line-height: 162.5px;
-    top: 50%;
   }
 }
 .project .projectImage {
@@ -499,12 +522,12 @@ section {
 }
 .project .projectImage .btn.oat {
   background-color: orange;
-  background-color: #f4425a;
+  background-color: #4285F4;
   animation-duration: 2s;
 }
 .project .projectImage .btn.vulcan {
+  background-color: #1ab6ff;
   background-color: #4285F4;
-  background-color: #f4425a;
   animation-duration: 2s;
 }
 .project .expand {
@@ -555,14 +578,6 @@ section {
     padding: 7.5px 25px;
     font-size: 28px;
     bottom: -210px;
-  }
-  .project .projectImage .btn.oat {
-    background-color: orange;
-    background-color: #f4425a;
-  }
-  .project .projectImage .btn.vulcan {
-    background-color: #4285F4;
-    background-color: #f4425a;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -675,7 +690,7 @@ section {
   content: "";
   width: 80px;
   height: 2.5px;
-  background-color: #4285F4;
+  background-color: #1ab6ff;
   position: absolute;
   margin: auto;
   bottom: -15px;
@@ -687,7 +702,7 @@ section {
   content: "";
   width: 80px;
   height: 2.5px;
-  background-color: #4285F4;
+  background-color: #1ab6ff;
   position: absolute;
   margin: auto;
   bottom: -5px;
@@ -721,7 +736,7 @@ section {
   margin: 0 auto;
   font-size: 24px;
   text-decoration: none;
-  background-color: grey;
+  background-color: #f4425a;
   color: white;
   padding: 5px 15px;
   border-radius: 50px;
@@ -800,7 +815,7 @@ section {
   transform: translateY(-1rem);
 }
 .projectOat .content h1 .headingNum {
-  color: #f4425a;
+  color: #1ab6ff;
 }
 .projectOat .content p {
   width: 72.5%;
@@ -809,7 +824,7 @@ section {
 }
 .projectOat .content a {
   text-decoration: none;
-  color: #4285F4;
+  color: #1ab6ff;
 }
 .projectOat .content .wireframes.oat {
   width: 275px;
@@ -848,7 +863,7 @@ section {
   transform: translateY(-1rem);
 }
 .projectVulcan .content h1 .headingNum {
-  color: #f4425a;
+  color: #1ab6ff;
 }
 .projectVulcan .content p {
   width: 72.5%;
@@ -857,7 +872,7 @@ section {
 }
 .projectVulcan .content a {
   text-decoration: none;
-  color: #4285F4;
+  color: #1ab6ff;
 }
 .projectVulcan .content .codepen {
   width: 100%;
@@ -885,11 +900,11 @@ h1, h2, h3, h4, h5, h6 {
 
 canvas {
   position: fixed;
-  background-image: linear-gradient(to bottom, #142642, #101f34, #0e1827, #08101a, #00040b);
+  background-color: #25282A;
 }
 
 i {
-  border: solid #f4425a;
+  border: solid #1ab6ff;
   border-width: 0 4px 4px 0;
   display: inline-block;
   position: relative;
@@ -910,9 +925,6 @@ i {
   bottom: 0;
   right: 25px;
   padding: 0 10px;
-}
-.top .fa-angle-up {
-  fill: red;
 }
 
 @media only screen and (min-width: 1024px) {

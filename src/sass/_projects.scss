@@ -114,13 +114,13 @@
 
         .btn.oat{
             background-color:orange;
-            background-color: rgb(244, 66, 90);
+            background-color: $flamingo;
             animation-duration: 2s;
         }
 
         .btn.vulcan{
-            background-color: #4285F4;
-            background-color: rgb(244, 66, 90);
+            background-color: $blue;
+            background-color: $flamingo;
             animation-duration: 2s;
         }
     }
@@ -196,16 +196,6 @@
     
             .btn:hover {
                 // top: -1%;
-            }
-    
-            .btn.oat{
-                background-color:orange;
-                background-color: rgb(244, 66, 90);
-            }
-    
-            .btn.vulcan{
-                background-color: #4285F4;
-                background-color: rgb(244, 66, 90);
             }
         }
     }

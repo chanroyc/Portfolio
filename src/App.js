@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import './animate.css';
 
+import $ from 'jquery';
 import 'jquery-ui';
 import 'jquery-scrollify';
 
@@ -15,7 +16,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 class App extends Component {
   componentDidMount() {
-
+    $('.name').fadeIn(2500);
   }
 
   render() {

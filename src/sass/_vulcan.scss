@@ -1,6 +1,6 @@
 .projectVulcan{
     // background-image: linear-gradient(to bottom, #142642, #101f34, #0e1827, #08101a, #00040b); 
-    background-color: #25282A;
+    background-color: $grey;
     color: white;
 
     .projectBanner.vulcan{
@@ -31,7 +31,7 @@
             }
 
             .headingNum{
-                color: rgb(244, 66, 90);
+                color: $blue;
             }
         }
 
@@ -43,7 +43,7 @@
 
         a{
             text-decoration: none;
-            color: #4285F4;
+            color: $blue;
         }
 
         .codepen {

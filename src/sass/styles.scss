@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
+@import "variables";
+
 @import "navigation";
 @import "panels";
 @import "pagination";
@@ -35,11 +37,12 @@ h1, h2, h3 ,h4 ,h5, h6 {
 canvas {
     // display: none;
     position: fixed;
-    background-image: linear-gradient(to bottom, #142642, #101f34, #0e1827, #08101a, #00040b);  
+    // background-image: linear-gradient(to bottom, #142642, #101f34, #0e1827, #08101a, #00040b);
+    background-color: $grey;
 }
 
 i {
-  border: solid rgb(244, 66, 90);
+  border: solid $blue;
   border-width: 0 4px 4px 0;
   display: inline-block;
   position: relative;
@@ -60,10 +63,6 @@ i {
   bottom: 0;
   right: 25px;
   padding: 0 10px;
-
-  .fa-angle-up {
-    fill: red;
-  }
 }
 
 @media only screen and (min-width: 1024px){

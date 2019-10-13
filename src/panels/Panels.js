@@ -30,7 +30,7 @@ class Panels extends Component {
                     params={{
                         "particles": {
                             "number": {
-                                "value": 50,
+                                "value": 60,
                                 "density": {
                                     "enable": true,
                                     "value_area": 1500
@@ -38,7 +38,7 @@ class Panels extends Component {
                             },
                             "line_linked": {
                                 "enable": true,
-                                "opacity": 0.02
+                                "opacity": 0.1
                             },
                             "move": {
                                 "direction": "right",
@@ -46,6 +46,9 @@ class Panels extends Component {
                             },
                             "size": {
                                 "value": 1.5
+                            },
+                            "color": {
+                                "value": "#1ab6ff"
                             },
                             "opacity": {
                                 "anim": {
