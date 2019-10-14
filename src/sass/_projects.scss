@@ -37,6 +37,10 @@
             left: 25%;
         }
 
+        .projectTitle.portfolio{
+            left: 17.5%;
+        }
+
         .projectImageContainer {
             position: relative;
             width: 100%;
@@ -61,6 +65,10 @@
 
             .projectNumberWrapper.oat{
                 right: -30px;
+            }
+
+            .projectNumberWrapper.portfolio{
+                right: -37.5px;
             }
 
             .catHide{
@@ -102,6 +110,12 @@
             background-size: cover;
         }
 
+        .projectImageContainer.portfolio{
+            background: url("projectPortfolio.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
         .btn {
             position: absolute;
             left: 50%;
@@ -118,13 +132,16 @@
         }
 
         .btn.oat{
-            background-color:orange;
             background-color: $flamingo;
             animation-duration: 2s;
         }
 
         .btn.vulcan{
-            background-color: $blue;
+            background-color: $flamingo;
+            animation-duration: 2s;
+        }
+
+        .btn.portfolio{
             background-color: $flamingo;
             animation-duration: 2s;
         }
@@ -146,6 +163,10 @@
 
             .projectTitle.vulcan{
                 left: 22.5%;
+            }
+
+            .projectTitle.portfolio{
+                left: 15%;
             }
 
             .btn{
@@ -179,6 +200,10 @@
                 }
     
                 .projectNumberWrapper.vulcan{
+                    right: -57.5px;
+                }
+
+                .projectNumberWrapper.portfolio{
                     right: -57.5px;
                 }
 
@@ -219,16 +244,19 @@
 
             .projectTitle{
                 font-size: 4em;
+                bottom: 27.5%;
             }
 
             .projectTitle.oat{
-                bottom: 27.5%;
                 left: -150px;
             }
 
             .projectTitle.vulcan{
-                bottom: 27.5%;
                 left: -25px;
+            }
+
+            .projectTitle.portfolio{
+                left: -75px;
             }
     
             .projectImageContainer {
@@ -243,6 +271,10 @@
                 }
     
                 .projectNumberWrapper.vulcan{
+                    right: -65px;
+                }
+
+                .projectNumberWrapper.portfolio{
                     right: -65px;
                 }
     
@@ -261,6 +293,10 @@
 
             .btn.vulcan{
                 left: -175px;
+            }
+
+            .btn.portfolio{
+                left: -185px;
             }
         }
     
@@ -283,12 +319,20 @@
                 left: -215px;
             }
 
+            .projectTitle.portfolio{
+                left: -215px;
+            }
+
             .btn.oat{
                 left: -265px;
             }
 
             .btn.vulcan{
                 left: -365px;
+            }
+
+            .btn.portfolio{
+                left: -325px;
             }
         }
     }
@@ -305,12 +349,20 @@
                 left: -275px;
             }
 
+            .projectTitle.portfolio{
+                left: -255px;
+            }
+
             .btn.oat{
                 left: -330px;
             }
 
             .btn.vulcan{
                 left: -425px;
+            }
+
+            .btn.portfolio{
+                left: -365px;
             }
         }
     }

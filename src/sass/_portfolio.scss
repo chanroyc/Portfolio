@@ -1,0 +1,60 @@
+.projectPortfolio{
+    // background-image: linear-gradient(to bottom, #142642, #101f34, #0e1827, #08101a, #00040b); 
+    background-color: $grey;
+    color: white;
+
+    .projectBanner.portfolio{
+        background: url("projectPortfolioBanner.jpg");
+        width: 100%;
+        height: 100vh;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .content{
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 75px 0;
+
+        h1 {
+            text-transform: uppercase;
+            &:before {
+                display: inline-block;
+                content: "";
+                border-top: 2px solid white;
+                position: relative;
+                top: 6px;
+                width: 30px;
+                margin: 0 20px 0 0;
+                transform: translateY(-1rem);
+            }
+
+            .headingNum{
+                color: $blue;
+            }
+        }
+
+        p {
+            width: 72.5%;
+            margin: 50px auto;
+            opacity: 0.75;
+        }
+
+        a{
+            text-decoration: none;
+            color: $blue;
+        }
+
+        img {
+            width: 100%;
+            margin: 0 auto 50px;
+        }
+
+        .wireframes.Portfolio{
+            width: 275px;
+            height: auto;
+            margin: 50px auto;
+        }
+    }
+}

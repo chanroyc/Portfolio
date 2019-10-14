@@ -4,6 +4,7 @@ import Home from './Home';
 import Oat from './Oat';
 import Vulcan from './Vulcan';
 import About from './About';
+import Portfolio from './Porfolio';
 import Header from '../navigation/Header';
 
 import Particles from 'react-particles-js';
@@ -84,7 +85,7 @@ class Panels extends Component {
                 <Vulcan />
 
                 {/* About Panel */}
-                <About />
+                <Portfolio />
             </>
         )
     }

@@ -14,6 +14,7 @@ class projectOat extends Component {
                     <div class='content'>
                         <h1><span class='headingNum'>01</span> Overview</h1>
                         <p>Office Administrator with Technnology is a hands-on program provided by British Columbia Institute of Technology. As my final project, my team and I built the program's website on WordPress using the starter theme, underscores.</p>
+                        <p>Prior to scheduling a meeting with the client, my team conducted research to better understand the industry. The goal of the meeting was to determine goals, tasks, target audiences and gather information about the client's requirements for design and content.</p>
 
                         <h1><span class='headingNum'>02</span> Team</h1>
                         <p>
@@ -26,7 +27,7 @@ class projectOat extends Component {
                         <h1><span class='headingNum'>03</span> Tech Stack</h1>
                         <p>HTML, CSS, Sass, PHP, JavaScript, jQuery, gulp.js, WordPress, REST</p>
 
-                        <h1><span class='headingNum'>04</span> Wireframes (Mobile)</h1>
+                        <h1><span class='headingNum'>04</span> Wireframes</h1>
 
                         <p>
                             <h1>Home</h1>

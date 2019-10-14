@@ -147,6 +147,15 @@ header {
     }
 }
 
+.headerPortfolio{
+    background-color: $grey;
+    width: calc(100%- 50px);
+
+    h1{
+        line-height: 35px;
+    }
+}
+
 .ham {
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
@@ -234,6 +243,12 @@ header {
     }
     
     .headerOat{
+        h1{
+            line-height: 50px;
+        }
+    }
+
+    .headerPortfolio{
         h1{
             line-height: 50px;
         }

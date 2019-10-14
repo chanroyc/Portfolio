@@ -5,6 +5,7 @@ class About extends Component {
         return(
             <>
                 <section id="about" className="panel about" data-section-name="about">
+                    
                     <img src='/images/cat-hide.png' className='catHide about'></img>
                     <img src='/images/cat-hide-wink.png' className='catHideWink about'></img>
 
@@ -25,7 +26,7 @@ class About extends Component {
                                 jQuery,
                                 PHP,
                                 WordPress,
-                                React.js,
+                                React,
                                 mySQL,
                                 Express.js,
                                 Node.js
@@ -41,7 +42,7 @@ class About extends Component {
                             </div>
                         </div>
 
-                        {/* <a href='#about' className='btn about'>Read More</a> */}
+                        <a href='#about' className='btn about'>Read More</a>
                     </div>
                 </section>
             </>

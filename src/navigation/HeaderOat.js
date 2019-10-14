@@ -5,7 +5,7 @@ class HeaderOat extends Component {
         return (
             <>
                 <header className='headerOat'>
-                    <h1><a href='/#oat' className='logo oat'><i className="arrow left"></i> BCIT OAT</a></h1>
+                    <h1><a href='javascript:history.back()' className='logo oat'><i className="arrow left"></i> BCIT OAT</a></h1>
                 </header>
             </>
         )

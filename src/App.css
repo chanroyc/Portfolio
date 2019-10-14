@@ -128,6 +128,14 @@ header nav .navContainer .socialLinks li a svg:hover {
   bottom: 2px;
 }
 
+.headerPortfolio {
+  background-color: #25282A;
+  width: calc(100%- 50px);
+}
+.headerPortfolio h1 {
+  line-height: 35px;
+}
+
 .ham {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -207,6 +215,10 @@ header nav .navContainer .socialLinks li a svg:hover {
   }
 
   .headerOat h1 {
+    line-height: 50px;
+  }
+
+  .headerPortfolio h1 {
     line-height: 50px;
   }
 }
@@ -467,6 +479,9 @@ section {
 .project .projectImage .projectTitle.vulcan {
   left: 25%;
 }
+.project .projectImage .projectTitle.portfolio {
+  left: 17.5%;
+}
 .project .projectImage .projectImageContainer {
   position: relative;
   width: 100%;
@@ -488,6 +503,9 @@ section {
 }
 .project .projectImage .projectImageContainer .projectNumberWrapper.oat {
   right: -30px;
+}
+.project .projectImage .projectImageContainer .projectNumberWrapper.portfolio {
+  right: -37.5px;
 }
 .project .projectImage .projectImageContainer .catHide {
   display: none;
@@ -518,6 +536,11 @@ section {
   background-position: center;
   background-size: cover;
 }
+.project .projectImage .projectImageContainer.portfolio {
+  background: url("projectPortfolio.jpg");
+  background-position: center;
+  background-size: cover;
+}
 .project .projectImage .btn {
   position: absolute;
   left: 50%;
@@ -533,12 +556,14 @@ section {
   animation-duration: 2s;
 }
 .project .projectImage .btn.oat {
-  background-color: orange;
   background-color: #4285F4;
   animation-duration: 2s;
 }
 .project .projectImage .btn.vulcan {
-  background-color: #1ab6ff;
+  background-color: #4285F4;
+  animation-duration: 2s;
+}
+.project .projectImage .btn.portfolio {
   background-color: #4285F4;
   animation-duration: 2s;
 }
@@ -554,6 +579,9 @@ section {
   }
   .project .projectImage .projectTitle.vulcan {
     left: 22.5%;
+  }
+  .project .projectImage .projectTitle.portfolio {
+    left: 15%;
   }
   .project .projectImage .btn {
     bottom: -132.5px;
@@ -574,6 +602,9 @@ section {
     right: -45px;
   }
   .project .projectImage .projectImageContainer .projectNumberWrapper.vulcan {
+    right: -57.5px;
+  }
+  .project .projectImage .projectImageContainer .projectNumberWrapper.portfolio {
     right: -57.5px;
   }
   .project .projectImage .projectImageContainer .catHide.oat {
@@ -602,14 +633,16 @@ section {
   }
   .project .projectImage .projectTitle {
     font-size: 4em;
+    bottom: 27.5%;
   }
   .project .projectImage .projectTitle.oat {
-    bottom: 27.5%;
     left: -150px;
   }
   .project .projectImage .projectTitle.vulcan {
-    bottom: 27.5%;
     left: -25px;
+  }
+  .project .projectImage .projectTitle.portfolio {
+    left: -75px;
   }
   .project .projectImage .projectImageContainer .projectNumberWrapper .projectNumber {
     font-size: 7em;
@@ -618,6 +651,9 @@ section {
     right: -50px;
   }
   .project .projectImage .projectImageContainer .projectNumberWrapper.vulcan {
+    right: -65px;
+  }
+  .project .projectImage .projectImageContainer .projectNumberWrapper.portfolio {
     right: -65px;
   }
   .project .projectImage .projectImageContainer .catHide.vulcan {
@@ -632,6 +668,9 @@ section {
   .project .projectImage .btn.vulcan {
     left: -175px;
   }
+  .project .projectImage .btn.portfolio {
+    left: -185px;
+  }
   .project .expand {
     transform: scale(1);
     right: 7.5%;
@@ -645,11 +684,17 @@ section {
   .project .projectImage .projectTitle.vulcan {
     left: -215px;
   }
+  .project .projectImage .projectTitle.portfolio {
+    left: -215px;
+  }
   .project .projectImage .btn.oat {
     left: -265px;
   }
   .project .projectImage .btn.vulcan {
     left: -365px;
+  }
+  .project .projectImage .btn.portfolio {
+    left: -325px;
   }
 }
 @media only screen and (min-width: 1600px) {
@@ -659,11 +704,17 @@ section {
   .project .projectImage .projectTitle.vulcan {
     left: -275px;
   }
+  .project .projectImage .projectTitle.portfolio {
+    left: -255px;
+  }
   .project .projectImage .btn.oat {
     left: -330px;
   }
   .project .projectImage .btn.vulcan {
     left: -425px;
+  }
+  .project .projectImage .btn.portfolio {
+    left: -365px;
   }
 }
 .about {
@@ -887,6 +938,58 @@ section {
 .projectVulcan .content .codepen {
   width: 100%;
   height: 450px;
+}
+
+.projectPortfolio {
+  background-color: #25282A;
+  color: white;
+}
+.projectPortfolio .projectBanner.portfolio {
+  background: url("projectPortfolioBanner.jpg");
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.projectPortfolio .content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+.projectPortfolio .content h1 {
+  text-transform: uppercase;
+}
+.projectPortfolio .content h1:before {
+  display: inline-block;
+  content: "";
+  border-top: 2px solid white;
+  position: relative;
+  top: 6px;
+  width: 30px;
+  margin: 0 20px 0 0;
+  transform: translateY(-1rem);
+}
+.projectPortfolio .content h1 .headingNum {
+  color: #1ab6ff;
+}
+.projectPortfolio .content p {
+  width: 72.5%;
+  margin: 50px auto;
+  opacity: 0.75;
+}
+.projectPortfolio .content a {
+  text-decoration: none;
+  color: #1ab6ff;
+}
+.projectPortfolio .content img {
+  width: 100%;
+  margin: 0 auto 50px;
+}
+.projectPortfolio .content .wireframes.Portfolio {
+  width: 275px;
+  height: auto;
+  margin: 50px auto;
 }
 
 .smooth {
