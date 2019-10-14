@@ -13,7 +13,7 @@ class Home extends Component {
                     </div> */}
                     <div className='intro'>
                         <h1 className='hi'>Hi, I'm</h1>
-                        <h1 className='name'>R<img src='/images/me.png'/>Y</h1>
+                        <h1 className='name'>R<img src='/images/cat.png'/>Y</h1>
                         <h1 className='sub'>Developer <span className='and'>&</span> Designer</h1>
                         <h1></h1>
                     </div>

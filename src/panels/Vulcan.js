@@ -13,7 +13,9 @@ class Vulcan extends Component {
                             </div>
 
                             <div className='projectImageContainer vulcan'>
-                                <h1 className='projectNumber vulcan'>02</h1>
+                                <div className='projectNumberWrapper vulcan'>
+                                    <h1 className='projectNumber vulcan'>02</h1>
+                                </div>
                                 <img src='/images/cat-hide-left.png' className='catHide vulcan'></img>
                             </div>
 

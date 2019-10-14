@@ -18,6 +18,7 @@
             bottom: -100px;
             transform: translate(-50%, -50%);
             font-size: 1.75em;
+            overflow: hidden;
         }
 
         .projectTitlePrimary{
@@ -41,21 +42,25 @@
             width: 100%;
             height: 100%;
 
-            .projectNumber {
-                color: white;
-                font-size: 4em;
+            .projectNumberWrapper{
+                overflow: hidden;
                 position: absolute;
                 bottom: 15%;
-                animation-duration: 2s;
-                font-family: 'Abril Fatface', cursive;
+
+                .projectNumber {
+                    color: white;
+                    font-size: 4em;
+                    animation-duration: 2s;
+                    font-family: 'Abril Fatface', cursive;
+                }
             }
 
-            .projectNumber.oat{
-                right: -30px;
-            }
-
-            .projectNumber.vulcan{
+            .projectNumberWrapper.vulcan{
                 right: -37.5px;
+            }
+
+            .projectNumberWrapper.oat{
+                right: -30px;
             }
 
             .catHide{
@@ -163,15 +168,17 @@
             }
 
             .projectImageContainer{
-                .projectNumber{
-                    font-size: 6em;
+                .projectNumberWrapper{
+                    .projectNumber{
+                        font-size: 6em;
+                    }
                 }
 
-                .projectNumber.oat{
+                .projectNumberWrapper.oat{
                     right: -45px;
                 }
     
-                .projectNumber.vulcan{
+                .projectNumberWrapper.vulcan{
                     right: -57.5px;
                 }
 
@@ -225,17 +232,17 @@
             }
     
             .projectImageContainer {
-                .projectNumber {
-                    font-size: 7em;
-                    right: -6%;
-                    bottom: 15%;
+                .projectNumberWrapper{
+                    .projectNumber {
+                        font-size: 7em;
+                    }
                 }
 
-                .projectNumber.oat{
+                .projectNumberWrapper.oat{
                     right: -50px;
                 }
     
-                .projectNumber.vulcan{
+                .projectNumberWrapper.vulcan{
                     right: -65px;
                 }
     

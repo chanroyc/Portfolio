@@ -34,28 +34,30 @@ header nav {
   position: absolute;
   left: 0;
 }
-header nav ul {
+header nav .navContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header nav .navContainer ul {
   display: flex;
   margin: 0;
   padding: 0;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  transform: translateY(-50%);
-  top: 40%;
 }
-header nav ul li {
+header nav .navContainer ul li {
   list-style: none;
   margin: 0 20px 0;
+  text-align: center;
 }
-header nav ul li a {
+header nav .navContainer ul li a {
   color: rgba(255, 255, 255, 0.1);
-  font-size: 4rem;
+  font-size: 3rem;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
 }
-header nav ul li a:before {
+header nav .navContainer ul li a:before {
   animation: wave 2s linear infinite;
   background-clip: text;
   background-image: url("https://firebasestorage.googleapis.com/v0/b/fire-fotos-8e3f9.appspot.com/o/img%2Fwave.png?alt=media&token=16a42c34-7a83-4970-873a-95e50e4d8090");
@@ -70,18 +72,21 @@ header nav ul li a:before {
   white-space: nowrap;
   width: 100%;
 }
-header nav ul li a:hover:before {
+header nav .navContainer ul li a:hover:before {
   width: 100%;
 }
-header .socialLinks {
-  flex-direction: row;
-  justify-content: center;
+header nav .navContainer .links {
+  flex-direction: column;
 }
-header .socialLinks li a svg {
+header nav .navContainer .socialLinks {
+  justify-content: center;
+  margin: 50px 0;
+}
+header nav .navContainer .socialLinks li a svg {
   width: 48px;
   height: 48px;
 }
-header .socialLinks li a svg:hover {
+header nav .navContainer .socialLinks li a svg:hover {
   fill: black;
 }
 
@@ -180,7 +185,10 @@ header .socialLinks li a svg:hover {
     font-size: 1.75em;
     line-height: 75px;
   }
-  header nav ul li a:before {
+  header nav .navContainer ul li a {
+    font-size: 4rem;
+  }
+  header nav .navContainer ul li a:before {
     width: 0;
   }
   header .ham {
@@ -311,7 +319,7 @@ section {
   display: none;
 }
 #home .intro .name img {
-  width: 50px;
+  width: 75px;
   margin: 0 10px;
 }
 #home .intro .sub .and {
@@ -417,7 +425,7 @@ section {
     font-size: 10em;
   }
   #home .intro .name img {
-    width: 100px;
+    width: 150px;
     margin: 0 20px;
   }
 }
@@ -445,6 +453,7 @@ section {
   bottom: -100px;
   transform: translate(-50%, -50%);
   font-size: 1.75em;
+  overflow: hidden;
 }
 .project .projectImage .projectTitlePrimary {
   animation-duration: 2s;
@@ -463,19 +472,22 @@ section {
   width: 100%;
   height: 100%;
 }
-.project .projectImage .projectImageContainer .projectNumber {
-  color: white;
-  font-size: 4em;
+.project .projectImage .projectImageContainer .projectNumberWrapper {
+  overflow: hidden;
   position: absolute;
   bottom: 15%;
+}
+.project .projectImage .projectImageContainer .projectNumberWrapper .projectNumber {
+  color: white;
+  font-size: 4em;
   animation-duration: 2s;
   font-family: "Abril Fatface", cursive;
 }
-.project .projectImage .projectImageContainer .projectNumber.oat {
-  right: -30px;
-}
-.project .projectImage .projectImageContainer .projectNumber.vulcan {
+.project .projectImage .projectImageContainer .projectNumberWrapper.vulcan {
   right: -37.5px;
+}
+.project .projectImage .projectImageContainer .projectNumberWrapper.oat {
+  right: -30px;
 }
 .project .projectImage .projectImageContainer .catHide {
   display: none;
@@ -555,13 +567,13 @@ section {
   .project .projectImage .projectTitle.vulcan {
     left: 20%;
   }
-  .project .projectImage .projectImageContainer .projectNumber {
+  .project .projectImage .projectImageContainer .projectNumberWrapper .projectNumber {
     font-size: 6em;
   }
-  .project .projectImage .projectImageContainer .projectNumber.oat {
+  .project .projectImage .projectImageContainer .projectNumberWrapper.oat {
     right: -45px;
   }
-  .project .projectImage .projectImageContainer .projectNumber.vulcan {
+  .project .projectImage .projectImageContainer .projectNumberWrapper.vulcan {
     right: -57.5px;
   }
   .project .projectImage .projectImageContainer .catHide.oat {
@@ -599,15 +611,13 @@ section {
     bottom: 27.5%;
     left: -25px;
   }
-  .project .projectImage .projectImageContainer .projectNumber {
+  .project .projectImage .projectImageContainer .projectNumberWrapper .projectNumber {
     font-size: 7em;
-    right: -6%;
-    bottom: 15%;
   }
-  .project .projectImage .projectImageContainer .projectNumber.oat {
+  .project .projectImage .projectImageContainer .projectNumberWrapper.oat {
     right: -50px;
   }
-  .project .projectImage .projectImageContainer .projectNumber.vulcan {
+  .project .projectImage .projectImageContainer .projectNumberWrapper.vulcan {
     right: -65px;
   }
   .project .projectImage .projectImageContainer .catHide.vulcan {

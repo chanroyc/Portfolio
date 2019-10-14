@@ -34,63 +34,70 @@ header {
         position: absolute;
         left: 0;
 
-        ul{
-            display: flex;
-            margin: 0;
-            padding: 0;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            transform: translateY(-50%);
-            top: 40%;
+        .navContainer{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
 
-            li {
-                list-style: none;
-                margin: 0 20px 0;
+            ul{
+                display: flex;
+                margin: 0;
+                padding: 0;
 
-                a {
-                    color: rgba(255, 255, 255, 0.1);
-                    font-size: 4rem;
-                    position: relative;
-                    text-decoration: none;
-                    text-transform: uppercase;
+                li {
+                    list-style: none;
+                    margin: 0 20px 0;
+                    text-align: center;
 
-                    &:before{
-                        animation: wave 2s linear infinite;
-	                    background-clip: text;
-                        background-image: url('https://firebasestorage.googleapis.com/v0/b/fire-fotos-8e3f9.appspot.com/o/img%2Fwave.png?alt=media&token=16a42c34-7a83-4970-873a-95e50e4d8090');
-                        background-position: 0;
-                        background-repeat: repeat-x;
-                        content: attr(data-text);
-                        left: 0;
-                        overflow: hidden;
-                        position: absolute;
-                        transition: width 0.5s ease;
-                        top: 0;
-                        white-space: nowrap;
-                        width: 100%;
-                    }
+                    a {
+                        color: rgba(255, 255, 255, 0.1);
+                        font-size: 3rem;
+                        position: relative;
+                        text-decoration: none;
+                        text-transform: uppercase;
 
-                    &:hover:before{
-                        width: 100%;
+                        &:before{
+                            animation: wave 2s linear infinite;
+                            background-clip: text;
+                            background-image: url('https://firebasestorage.googleapis.com/v0/b/fire-fotos-8e3f9.appspot.com/o/img%2Fwave.png?alt=media&token=16a42c34-7a83-4970-873a-95e50e4d8090');
+                            background-position: 0;
+                            background-repeat: repeat-x;
+                            content: attr(data-text);
+                            left: 0;
+                            overflow: hidden;
+                            position: absolute;
+                            transition: width 0.5s ease;
+                            top: 0;
+                            white-space: nowrap;
+                            width: 100%;
+                        }
+
+                        &:hover:before{
+                            width: 100%;
+                        }
                     }
                 }
             }
-        }
-    }
 
-    .socialLinks{
-        flex-direction: row;
-        justify-content: center;
+            .links {
+                flex-direction: column;
+            }
+            
+            .socialLinks{
+                justify-content: center;
+                margin: 50px 0;
+                
+                li {
+                    a{
+                        svg {
+                            width: 48px;
+                            height: 48px;
         
-        li {
-            a{
-                svg {
-                    width: 48px;
-                    height: 48px;
-
-                    &:hover{
-                        fill: black;
+                            &:hover{
+                                fill: black;
+                            }
+                        }
                     }
                 }
             }
@@ -193,11 +200,14 @@ header {
         }
 
         nav{
-            ul{
-                li{
-                    a{  
-                        &:before{
-                            width: 0;
+            .navContainer{
+                ul{
+                    li{
+                        a{
+                            font-size: 4rem;
+                            &:before{
+                                width: 0;
+                            }
                         }
                     }
                 }
