@@ -15,7 +15,7 @@ class Oat extends Component {
 
                             <div className='projectImageContainer oat'>
                                 <div className='projectNumberWrapper oat'>
-                                    <h1 className='projectNumber oat'>01</h1>    
+                                    <h1 className='projectNumber oat'>03</h1>    
                                 </div>
                                 <img src='/images/cat-hide.png' className='catHide oat'></img>
                             </div>

@@ -181,13 +181,13 @@ $(function() {
 
         $('.nav-work').on('click', function(){
           $.scrollify.currentIndex = 0;
-          $.scrollify.move("#oat");
+          $.scrollify.move("#portfolio");
         });
 
-        $('.nav-about').on('click', function(){
-          $.scrollify.currentIndex = 0;
-          $.scrollify.move("#about");
-        });
+        // $('.nav-about').on('click', function(){
+        //   $.scrollify.currentIndex = 0;
+        //   $.scrollify.move("#about");
+        // });
       },
     });
   });

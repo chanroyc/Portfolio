@@ -78,14 +78,14 @@ class Panels extends Component {
                 {/* Home Panel */}
                 <Home />
 
-                {/* BCIT OAT Panel */}
-                <Oat />
+                {/* Portfolio Panel */}
+                <Portfolio />                
 
                 {/* Vulcan Panel */}
                 <Vulcan />
 
-                {/* About Panel */}
-                <Portfolio />
+                {/* BCIT OAT Panel */}
+                <Oat />
             </>
         )
     }
