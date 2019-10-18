@@ -7,7 +7,7 @@ import "../scripts/scrollTop";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 
-class projectPortfolioV2 extends Component {
+class projectPortfolio extends Component {
     render(){
         return(
             <>
@@ -108,7 +108,7 @@ class projectPortfolioV2 extends Component {
                                 <img src='/images/portfolioXDHome.jpg' />
                                 <img src='/images/portfolioXDAbout.jpg' />
                                 <img src='/images/portfolioXDProject.jpg' />
-                                <img src='/images/portFolioXDProjectDetails.jpg' />
+                                <img src='/images/portfolioXDProjectDetails.jpg' />
                                 <img src='/images/portfolioXDContact-1.jpg' />
                                 <img src='/images/portfolioXDContact-2.jpg' />
                             </span>
@@ -144,4 +144,4 @@ class projectPortfolioV2 extends Component {
     }
 }
 
-export default projectPortfolioV2;
+export default projectPortfolio;
