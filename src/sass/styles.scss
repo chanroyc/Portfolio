@@ -10,11 +10,15 @@
 
 @import "home";
 @import "projects";
-@import "about";
+@import "pages";
 
-@import "oat";
-@import "vulcan";
-@import "portfolio";
+div, span {
+  box-sizing: border-box;
+}
+
+img{
+  width: 100%;
+}
 
 .smooth{
   scroll-behavior: smooth;
@@ -72,3 +76,4 @@ i {
     bottom: 3px;
   }
 }
+

@@ -7,19 +7,12 @@ class Home extends Component {
         return(
             <>
                 <section id="home" className="panel home" data-section-name="home">
-                    {/* <div class='name'>
-                        <h1 className='firstName'>Roy</h1>
-                        <h1 className='lastName'>Chan</h1>
-                    </div> */}
                     <div className='intro'>
                         <h1 className='hi'>Hi, I'm</h1>
                         <h1 className='name'>R<img src='/images/cat.png'/>Y</h1>
                         <h1 className='sub'>Developer <span className='and'>&</span> Designer</h1>
                         <h1></h1>
                     </div>
-
-                    {/* <img src="/images/rings.svg" className='rings'></img> */}
-                    {/* <img src="/images/cat.svg" className='cat'></img> */}
                     <span className='scroll-down animated'>Scroll Down </span>
                 </section>
             </>

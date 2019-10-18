@@ -359,16 +359,6 @@ section {
   margin: auto;
   bottom: -80px;
 }
-#home .cat, #home .rings {
-  transform: translate(-50%, -50%);
-}
-#home .cat {
-  position: absolute;
-  transition: all 1.75s ease-out;
-  width: 600px;
-  left: 50%;
-  top: 35%;
-}
 #home .rings {
   position: fixed;
   transition: all 2s ease-out;
@@ -377,55 +367,10 @@ section {
   top: 50%;
 }
 
-@media only screen and (min-width: 768px) {
-  #home .cat {
-    width: 1000px;
-    top: 37.5%;
-  }
-  #home .rings {
-    left: 50%;
-  }
-}
-@media only screen and (width: 375px) and (height: 812px) {
-  #home .cat {
-    width: 900px;
-  }
-}
-@media only screen and (width: 375px) and (height: 667px) {
-  #home .cat {
-    width: 800px;
-  }
-}
-@media only screen and (width: 414px) and (height: 736px) {
-  #home .cat {
-    width: 900px;
-    top: 37.5%;
-  }
-}
-@media only screen and (width: 360px) and (height: 740px) {
-  #home .cat {
-    width: 900px;
-  }
-}
 @media only screen and (min-width: 1024px) {
   #home .scroll-down {
     font-size: 1em;
     left: 50px;
-  }
-  #home .cat, #home .rings {
-    width: 1600px;
-    left: 72.5%;
-    top: 50%;
-  }
-  #home .cat {
-    position: absolute;
-    transition: 2s all ease-out;
-    top: 50%;
-    width: 1300px;
-  }
-  #home .rings {
-    position: fixed;
-    transition: 1.75s all ease-out;
   }
   #home .intro {
     width: 500px;
@@ -441,16 +386,11 @@ section {
     margin: 0 20px;
   }
 }
-@media only screen and (min-width: 1600px) {
-  #home .cat {
-    width: 1400px;
-  }
-}
 .project .projectImage {
   width: 75%;
   height: 65%;
   transition-delay: 0.3s;
-  transition: all 2s ease;
+  transition: all 1.5s ease;
   position: absolute;
   right: 0%;
   top: 20%;
@@ -717,279 +657,304 @@ section {
     left: -365px;
   }
 }
-.about {
+.page {
+  background-color: #25282A;
   color: white;
 }
-.about .catHide.about {
-  display: none;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
+.page .pageTop {
+  width: 100vw;
+  height: 100vh;
 }
-.about .catHideWink.about {
-  display: none;
-  width: 100%;
+.page .pageTop .heading {
   position: absolute;
-  bottom: 0;
-}
-.about .aboutContent {
-  display: none;
-  position: absolute;
-  width: 80%;
-  max-width: 700px;
-  top: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 10%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 0;
 }
-.about .aboutContent h1 {
-  display: none;
-  font-size: 2.5em;
-  text-align: center;
-  position: relative;
-}
-.about .aboutContent h1:before {
-  content: "";
-  width: 80px;
-  height: 2.5px;
-  background-color: #1ab6ff;
-  position: absolute;
-  margin: auto;
-  bottom: -15px;
-  left: calc(45% + 40px);
-  border-radius: 50px;
-  transform: translate(-50%, -50%);
-}
-.about .aboutContent h1:after {
-  content: "";
-  width: 80px;
-  height: 2.5px;
-  background-color: #1ab6ff;
-  position: absolute;
-  margin: auto;
-  bottom: -5px;
-  left: 45%;
-  border-radius: 50px;
-  transform: translate(-50%, -50%);
-}
-.about .aboutContent .tagline {
-  font-size: 1.5em;
-  text-align: center;
-  margin: 50px 0;
-}
-.about .aboutContent .toolbox {
-  margin: 0 0 30px;
-  font-size: 1.1em;
-}
-.about .aboutContent .toolbox h3 {
-  margin: 10px 0;
-  font-size: 1.25em;
-}
-.about .aboutContent .toolbox .techStack {
-  margin: 50px 0;
-}
-.about .aboutContent .toolbox .designStack {
-  margin: 50px 0;
-}
-.about .aboutContent .btn {
+.page .pageTop .heading .title {
   display: block;
-  top: 0;
-  width: 120px;
-  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+.page .pageTop .heading .title h1 {
+  margin: 50px 0;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  font-size: 2.5em;
+}
+.page .pageTop .heading .title a {
   font-size: 24px;
   text-decoration: none;
-  background-color: #f4425a;
   color: white;
+  background-color: #4285F4;
   padding: 5px 15px;
   border-radius: 50px;
   text-align: center;
-  transition: 0.5s all ease;
 }
-.about .aboutContent .btn:hover {
-  top: -1%;
+.page .pageTop .heading canvas {
+  display: none;
 }
-
-@media only screen and (min-width: 768px) {
-  .about .aboutContent {
-    width: 60%;
+.page .pageTop .heading #sd-container {
+  position: absolute;
+  bottom: -115px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page .pageTop .heading .arrow {
+  position: relative;
+  width: 42px;
+  height: 16px;
+  opacity: 0;
+}
+.page .pageTop .heading .arrow::before, .page .pageTop .heading .arrow::after {
+  content: "";
+  width: 21px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 2px;
+  display: inline-block;
+}
+.page .pageTop .heading .arrow::before {
+  transform: rotate(45deg) translateX(25%);
+}
+.page .pageTop .heading .arrow::after {
+  transform: rotate(-45deg) translateX(-25%);
+}
+.page .pageTop .heading .arrow:nth-child(1) {
+  top: -50px;
+  opacity: 1;
+  animation: arrow2 1s ease 0s infinite;
+}
+.page .pageTop .heading .arrow:nth-child(2) {
+  top: -25px;
+  animation: arrow1 1s ease 0.25s infinite;
+}
+@keyframes arrow1 {
+  from {
+    opacity: 0;
+    top: -25px;
   }
-  .about .aboutContent h1 {
-    font-size: 3.5em;
+  to {
+    opacity: 0;
+    top: 0px;
   }
-  .about .aboutContent .tagline {
-    font-size: 2em;
-    margin: 75px 0;
-  }
-  .about .aboutContent .toolbox {
-    margin: 0 0 75px;
-  }
-  .about .aboutContent .toolbox h3 {
-    font-size: 1.35em;
-  }
-  .about .aboutContent .toolbox .techStack {
-    margin: 75px 0;
-    font-size: 1.2em;
-  }
-  .about .aboutContent .toolbox .designStack {
-    margin: 75px 0;
-    font-size: 1.2em;
-  }
-  .about .aboutContent .btn {
-    width: 140px;
-    font-size: 24px;
-    padding: 7.5px 25px;
+  50% {
+    opacity: 1;
   }
 }
-@media only screen and (min-width: 1024px) {
-  .about .aboutContent .btn {
-    padding: 7.5px 25px;
-    font-size: 28px;
+@keyframes arrow2 {
+  from {
+    opacity: 0;
+    top: -35px;
+  }
+  to {
+    opacity: 0;
+    top: -10px;
+  }
+  50% {
+    opacity: 1;
   }
 }
-.projectOat {
-  background-color: #25282A;
-  color: white;
-}
-.projectOat .projectBanner.oat {
-  background: url("comingSoon.jpg");
+.page .pageTop .bannerImage {
   width: 100%;
-  height: 100vh;
-  background-attachment: fixed;
+  height: 100%;
+  z-index: 0;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
 }
-.projectOat .content {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 75px 0;
+.page .pageTop .bannerImage.portfolio {
+  background-image: url("portfolioBanner.jpg");
 }
-.projectOat .content h1 {
-  text-transform: uppercase;
+.page .pageTop .bannerImage.vulcan {
+  background-image: url("vulcanBannerMobile.jpg");
 }
-.projectOat .content h1:before {
+.page .pageTop .bannerImage.about {
+  background-image: url("aboutme.jpg");
+}
+.page .pageSections section {
+  padding: 50px 0;
+}
+.page .pageSections section:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.page .pageSections section .sectionNumber {
+  color: #1ab6ff;
+  font-weight: bold;
+  font-size: 2em;
+  display: inline-block;
+}
+.page .pageSections section .sectionNumber:before {
   display: inline-block;
   content: "";
-  border-top: 2px solid white;
+  border-top: 3px solid white;
   position: relative;
-  top: 6px;
+  top: 3px;
   width: 30px;
   margin: 0 20px 0 0;
   transform: translateY(-1rem);
 }
-.projectOat .content h1 .headingNum {
-  color: #1ab6ff;
-}
-.projectOat .content p {
-  width: 72.5%;
-  margin: 50px auto;
-  opacity: 0.75;
-}
-.projectOat .content a {
-  text-decoration: none;
-  color: #1ab6ff;
-}
-.projectOat .content .wireframes.oat {
-  width: 275px;
-  height: auto;
-  margin: 50px auto;
-}
-
-.projectVulcan {
-  background-color: #25282A;
-  color: white;
-}
-.projectVulcan .projectBanner.vulcan {
-  background: url("projectVulcanBanner.jpg");
-  width: 100%;
-  height: 100vh;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: bottom;
-}
-.projectVulcan .content {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 75px 0;
-}
-.projectVulcan .content h1 {
-  text-transform: uppercase;
-}
-.projectVulcan .content h1:before {
+.page .pageSections section h2 {
+  font-size: 2em;
   display: inline-block;
-  content: "";
-  border-top: 2px solid white;
-  position: relative;
-  top: 6px;
-  width: 30px;
-  margin: 0 20px 0 0;
-  transform: translateY(-1rem);
+  margin: 0 25px;
 }
-.projectVulcan .content h1 .headingNum {
-  color: #1ab6ff;
+.page .pageSections section .description {
+  font-size: 1.15em;
+  padding: 0 50px;
+  margin: 50px 0 0;
+  display: block;
 }
-.projectVulcan .content p {
-  width: 72.5%;
-  margin: 50px auto;
-  opacity: 0.75;
+.page .pageSections section .description img {
+  width: calc(50% - 2px);
+  display: inline-block;
+  border: 1px solid #1ab6ff;
 }
-.projectVulcan .content a {
+.page .pageSections section .description img:first-of-type {
+  margin: 50px 0 0;
+  width: calc(100% - 2px);
+}
+.page .pageSections section .description iframe {
+  width: 100%;
+  height: 540px;
+  margin: 25px 0 0;
+}
+.page .pageSections section .description p:first-of-type {
+  margin-top: 0;
+}
+.page .pageSections section .description .certification h3 {
+  font-size: 1.5em;
+}
+.page .pageSections section .description .certification p {
+  margin: 0;
+}
+.page .pageSections section .description .certification:not(:last-child) {
+  margin: 0 0 50px;
+}
+.page .pageSections section .description a {
   text-decoration: none;
   color: #1ab6ff;
 }
-.projectVulcan .content .codepen {
+.page .pageSections .content {
   width: 100%;
-  height: 450px;
-}
-
-.projectPortfolio {
-  background-color: #25282A;
-  color: white;
-}
-.projectPortfolio .projectBanner.portfolio {
-  background: url("projectPortfolioBanner.jpg");
-  width: 100%;
-  height: 100vh;
+  height: 480px;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }
-.projectPortfolio .content {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 75px 0;
+.page .pageSections .content.portfolioConcepts {
+  background-image: url("portfolioConcepts.jpg");
 }
-.projectPortfolio .content h1 {
+.page .pageSections .content.portfolioDesign {
+  background-image: url("portfolioDesign.jpg");
+}
+.page .pageSections .content.vulcanDevelopment {
+  background-image: url("vulcanDevelopment.jpg");
+}
+.page .pageSections .content.vulcanCode {
+  background-image: url("vulcanCode.jpg");
+}
+.page .pageBack {
+  padding: 100px 0;
+}
+.page .pageBack .pageBackBtn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
   text-transform: uppercase;
 }
-.projectPortfolio .content h1:before {
+.page .pageBack .pageBackBtn:before {
   display: inline-block;
   content: "";
-  border-top: 2px solid white;
+  border-top: 3px solid white;
   position: relative;
-  top: 6px;
+  top: 5px;
   width: 30px;
   margin: 0 20px 0 0;
   transform: translateY(-1rem);
 }
-.projectPortfolio .content h1 .headingNum {
-  color: #1ab6ff;
+
+@media only screen and (min-width: 1024px) {
+  .page .pageTop {
+    display: grid;
+    grid-template-areas: "one two two";
+  }
+  .page .pageTop .heading {
+    grid-area: one;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    transform: none;
+  }
+  .page .pageTop .heading #sd-container {
+    bottom: 10%;
+  }
+  .page .pageTop .heading .title {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+    width: 100%;
+  }
+  .page .pageTop .heading .title h1 {
+    text-shadow: none;
+    font-size: 3em;
+  }
+  .page .pageTop .heading .title a {
+    font-size: 24px;
+  }
+  .page .pageTop .heading canvas {
+    display: block;
+    position: absolute;
+  }
+  .page .pageTop .bannerImage {
+    grid-area: two;
+  }
+  .page .pageTop .bannerImage.vulcan {
+    background-image: url("vulcanBannerDesktop.jpg");
+  }
+  .page .pageSections section {
+    padding: 100px 0;
+    display: grid;
+    grid-template-areas: "number h2 description" "content content content";
+    grid-template-columns: 16.66% 16.66% 66.66%;
+    grid-template-rows: auto;
+  }
+  .page .pageSections section .sectionNumber {
+    grid-area: number;
+    line-height: 50px;
+    font-size: 2.5em;
+  }
+  .page .pageSections section .sectionNumber:before {
+    width: 50px;
+  }
+  .page .pageSections section h2 {
+    grid-area: h2;
+    margin: 0;
+    font-size: 2.5em;
+  }
+  .page .pageSections section .description {
+    grid-area: description;
+    margin: 0 50px;
+  }
+  .page .pageSections .content {
+    grid-area: content;
+  }
+  .page .pageBack .pageBackBtn {
+    font-size: 2.5em;
+  }
+  .page .pageBack .pageBackBtn:before {
+    top: 2px;
+  }
 }
-.projectPortfolio .content p {
-  width: 72.5%;
-  margin: 50px auto;
-  opacity: 0.75;
+div, span {
+  box-sizing: border-box;
 }
-.projectPortfolio .content a {
-  text-decoration: none;
-  color: #1ab6ff;
-}
-.projectPortfolio .content img {
+
+img {
   width: 100%;
-  margin: 0 auto 50px;
-}
-.projectPortfolio .content .wireframes.Portfolio {
-  width: 275px;
-  height: auto;
-  margin: 50px auto;
 }
 
 .smooth {

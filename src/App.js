@@ -9,9 +9,11 @@ import 'jquery-scrollify';
 
 import Panels from './panels/Panels';
 
-import projectOat from './projects/projectOat';
-import projectVulcan from './projects/projectVulcan';
-import projectPortfolio from './projects/projectPortfolio';
+
+import projectOat from './pages/projectOat';
+import projectVulcan from './pages/projectVulcan';
+import projectPortfolio from './pages/projectPortfolio';
+import About from './pages/About';
 
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
@@ -24,12 +26,13 @@ class App extends Component {
     return  (
       <>
 	  		<Router>
-				<Switch>
-					<Route exact path="/" component={Panels} />
-					<Route path="/vulcan" component={projectVulcan} />
-					<Route path="/oat" component={projectOat} />
-          <Route path="/portfolio" component={projectPortfolio} />
-				</Switch>
+          <Switch>
+            <Route exact path="/" component={Panels} />
+            <Route path="/vulcan" component={projectVulcan} />
+            <Route path="/oat" component={projectOat} />
+            <Route path="/portfolio" component={projectPortfolio} />
+            <Route path="/about" component={About} />
+          </Switch>
 			</Router>
 			{/* <Panels /> */}
       </>

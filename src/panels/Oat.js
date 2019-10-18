@@ -20,7 +20,7 @@ class Oat extends Component {
                                 <img src='/images/cat-hide.png' className='catHide oat'></img>
                             </div>
                             
-                            <a href="oat" className='btn oat'>Show</a>
+                            <a href="#oat" className='btn oat'>Show</a>
                         </div>
                     </div>
                 </section>

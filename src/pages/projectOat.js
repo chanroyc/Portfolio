@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import HeaderOat from '../navigation/HeaderOat';
+import Header from '../navigation/Header';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
@@ -8,7 +8,7 @@ class projectOat extends Component {
     render(){
         return(
             <>
-                <HeaderOat />
+                <Header />
                 <div class='projectOat'>
                     <div class='projectBanner oat'></div>
                     {/* <div class='content'>

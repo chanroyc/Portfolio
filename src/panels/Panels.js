@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import Home from './Home';
 import Oat from './Oat';
 import Vulcan from './Vulcan';
-import About from './About';
 import Portfolio from './Porfolio';
 import Header from '../navigation/Header';
 

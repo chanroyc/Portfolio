@@ -20,7 +20,7 @@ $(function() {
       section : ".panel",
       scrollbars: false,
       touchScroll: true,
-      scrollSpeed: 2000,
+      scrollSpeed: 1500,
       before:function(i,panels) {
 
         let ref = panels[i].attr("data-section-name");
