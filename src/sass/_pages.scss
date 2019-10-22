@@ -29,7 +29,7 @@
                     font-size: 24px;
                     text-decoration: none;
                     color: white;
-                    background-color: $flamingo;
+                    background-color: $blue_shade;
                     padding: 5px 15px;
                     border-radius: 50px;
                     text-align: center;
@@ -182,15 +182,10 @@
                 }
 
                 img{
-                    // width: calc(50% - 3px);
                     display: inline-block;
                     box-shadow: 0px 0px 5px 2.5px rgba(0,0,0,0.5);
                     margin: 25px 0;
                 }
-                // img:first-of-type{
-                //     margin: 50px 0 0;
-                //     width: calc(100% - 3px);
-                // }
                 
                 iframe{
                     width: 100%;
