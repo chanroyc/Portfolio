@@ -15,7 +15,7 @@ import projectVulcan from './pages/projectVulcan';
 import projectPortfolio from './pages/projectPortfolio';
 import About from './pages/About';
 
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 class App extends Component {
   componentDidMount() {
@@ -34,7 +34,6 @@ class App extends Component {
             <Route path="/about" component={About} />
           </Switch>
 			</Router>
-			{/* <Panels /> */}
       </>
     );
   }

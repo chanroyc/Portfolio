@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
 import 'jquery-ui';
 
 class Home extends Component {
@@ -9,7 +8,7 @@ class Home extends Component {
                 <section id="home" className="panel home" data-section-name="home">
                     <div className='intro'>
                         <h1 className='hi'>Hi, I'm</h1>
-                        <h1 className='name'>R<img src='/images/cat.png'/>Y</h1>
+                        <h1 className='name'>R<img src='/images/cat.png' alt="Sketch of cat's head in place of the letter O"/>Y</h1>
                         <h1 className='sub'>Developer <span className='and'>&</span> Designer</h1>
                         <h1></h1>
                     </div>

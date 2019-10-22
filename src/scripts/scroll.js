@@ -2,20 +2,6 @@ import $ from 'jquery';
 import 'jquery-ui';
 
 $(function() {
-    // $('body').mousemove(function(e){
-    //   let amountMovedX = (e.pageX* -1/300);
-    //   let amountMovedY = (e.pageY* -1/300);
-
-    //   let currentTop = $('.cat').css('top')
-    //   let currentLeft = $('.cat').css('left');
-
-    //   $('.rings').css('top', 'calc(50% + '+amountMovedY+'%)');
-    //   $('.rings').css('left', 'calc(72.5% + '+amountMovedX+'%)');
-
-    //   $('.cat').css('top', 'calc(50% + '+amountMovedY+'%)');
-    //   $('.cat').css('left', 'calc(72.5% + '+amountMovedX+'%)');
-    // });
-
     $.scrollify({
       section : ".panel",
       scrollbars: false,
@@ -24,7 +10,6 @@ $(function() {
       before:function(i,panels) {
 
         let ref = panels[i].attr("data-section-name");
-        let panel = '.panel.'+ref;
 
         $(".pagination .active").removeClass("active");
   

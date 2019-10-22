@@ -67,7 +67,7 @@ class projectVulcan extends Component {
                             />
                             <div className='title'>
                                 <h1>Vulcan Industries</h1>
-                                <a href='https://vulcan.chanroyc.ca/' target="_blank">View Live</a>
+                                <a href='https://vulcan.chanroyc.ca/' target="_blank" rel="noopener noreferrer">View Live</a>
                             </div>
                             <div id="sd-container" href='#section-1'>
                                 <div className="arrow"></div>

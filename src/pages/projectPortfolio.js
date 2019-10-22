@@ -67,7 +67,7 @@ class projectPortfolio extends Component {
                             />
                             <div className='title'>
                                 <h1>Portfolio App</h1>
-                                <a href='https://chanroyc.ca/' target="_blank">View Live</a>
+                                <a href='https://chanroyc.ca/' target="_blank" rel="noopener noreferrer">View Live</a>
                             </div>
                             <div id="sd-container" href='#section-1'>
                                 <div className="arrow"></div>
@@ -100,12 +100,12 @@ class projectPortfolio extends Component {
                             <h2>Concepts</h2>
                             <span className='description'>
                                 <Fade big><p>The initial concepts were designed and built in Adobe XD months prior to development. These concepts were originally the finalized prototypes, but I decided to only use them as an alpha version before redesigning the layout with sketches in InVision.</p></Fade>
-                                <Fade big><img src='/images/portfolioXDHome.jpg' /></Fade>
-                                <Fade big><img src='/images/portfolioXDAbout.jpg' /></Fade>
-                                <Fade big><img src='/images/portfolioXDProject.jpg' /></Fade>
-                                <Fade big><img src='/images/portfolioXDProjectDetails.jpg' /></Fade>
-                                <Fade big><img src='/images/portfolioXDContact-1.jpg' /></Fade>
-                                <Fade big><img src='/images/portfolioXDContact-2.jpg' /></Fade>
+                                <Fade big><img src='/images/portfolioXDHome.jpg' alt="Adobe XD Prototype of the Home Page of Roy Chan's Portfolio website"/></Fade>
+                                <Fade big><img src='/images/portfolioXDAbout.jpg' alt="Adobe XD Prototype of the About Page of Roy Chan's Portfolio website"/></Fade>
+                                <Fade big><img src='/images/portfolioXDProject.jpg' alt="Adobe XD Prototype of the Project Pages of Roy Chan's Portfolio website"/></Fade>
+                                <Fade big><img src='/images/portfolioXDProjectDetails.jpg' alt="Adobe XD Prototype of Project Details of Roy Chan's Portfolio website"/></Fade>
+                                <Fade big><img src='/images/portfolioXDContact-1.jpg' alt="Adobe XD Prototype of Part 1 of the Contact Page of Roy Chan's Portfolio website"/></Fade>
+                                <Fade big><img src='/images/portfolioXDContact-2.jpg' alt="Adobe XD Prototype of Part 2 of the Contact page of Roy Chan's Portfolio website"/></Fade>
                             </span>
                         </section>
 
@@ -117,8 +117,8 @@ class projectPortfolio extends Component {
                             <span className='description'>
                                 <Fade big><p>Using concepts from the prototype, I went backwards in the process to sketch wireframes in InVision. The prototype's design had design elements that I liked, some of which include pagination and the colour scheme. To create an improved, minimalistic website, the use of space was of utmost importance and was rather challenging with the amount of content this portfolio contains. To maximize the use of spacing in both mobile and desktop, I adjusted the sizing of elements which resulted in the following solution below.</p></Fade>
 
-                                <Fade big><img src='/images/portfolioInvisionDesktop.jpg' /></Fade>
-                                <Fade big><img src='/images/portfolioInvisionMobile.jpg' /></Fade>
+                                <Fade big><img src='/images/portfolioInvisionDesktop.jpg' alt="InVision wireframe sketches of the Desktop version of Roy Chan's Portfolio website"/></Fade>
+                                <Fade big><img src='/images/portfolioInvisionMobile.jpg' alt="InVision wireframe sketches of the mobile version of Roy Chan's Portfolio website"/></Fade>
                             </span>
                         </section>
 

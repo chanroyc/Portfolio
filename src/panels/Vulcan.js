@@ -16,7 +16,7 @@ class Vulcan extends Component {
                                 <div className='projectNumberWrapper vulcan'>
                                     <h1 className='projectNumber vulcan'>02</h1>
                                 </div>
-                                <img src='/images/cat-hide-left.png' className='catHide vulcan'></img>
+                                <img src='/images/cat-hide-left.png' alt='Animated Sketch of a Cat Coming out from Hiding Behind Project Image' className='catHide vulcan'></img>
                             </div>
 
                             <a href="vulcan" className='btn vulcan'>Show</a>

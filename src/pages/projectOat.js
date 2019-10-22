@@ -68,7 +68,7 @@ class projectOat extends Component {
                             />
                             <div className='title'>
                                 <h1>BCIT OAT</h1>
-                                <a href='https://bcitoat.bcitwebdeveloper.ca/' target="_blank">View Live</a>
+                                <a href='https://bcitoat.bcitwebdeveloper.ca/' target="_blank" rel="noopener noreferrer">View Live</a>
                             </div>
                             <div id="sd-container" href='#section-1'>
                                 <div className="arrow"></div>
@@ -125,7 +125,7 @@ class projectOat extends Component {
 
                                 <Fade big><h3>Information Architecture</h3></Fade>
                                 <Fade big><p>The information architecture was restructured to improve representations of pages by utilizing different titles and categories. The follwing information architecture also includes page templates we were going to use to build the custom theme.</p></Fade>
-                                <Fade big><img src='/images/oatInformationArchitecture.jpg' /></Fade>
+                                <Fade big><img src='/images/oatInformationArchitecture.jpg' alt='Information Architecture of the BCIT OAT website'/></Fade>
                                 
                                 <Fade big><h3>Content</h3></Fade>
                                 <Fade big><p>The content was to be kept the same as the existing website with an additional feature to be able to change, edit, and add new content on the fly through the back-end of WordPress.</p></Fade>
@@ -137,7 +137,7 @@ class projectOat extends Component {
                             <span className='sectionNumber'>05</span>
                             <h2>Wireframes</h2>
                             <span className='description'>
-                                <Fade big><img src='/images/invisionOat.jpg' /></Fade>
+                                <Fade big><img src='/images/invisionOat.jpg' alt='InVision Wireframe of the BCIT OAT website'/></Fade>
                             </span>
                         </section>
 
@@ -147,12 +147,12 @@ class projectOat extends Component {
                             <span className='sectionNumber'>06</span>
                             <h2>Prototype</h2>
                             <span className='description'>
-                                <Fade big><img src='/images/adobeXDOatHome.jpg' /></Fade>
-                                <Fade big><img src='/images/adobeXDOatSchedule.jpg' /></Fade>
-                                <Fade big><img src='/images/adobeXDOatCourses.jpg' /></Fade>
-                                <Fade big><img src='/images/adobeXDOatCertifications.jpg' /></Fade>
-                                <Fade big><img src='/images/adobeXDOatCareers.jpg' /></Fade>
-                                <Fade big><img src='/images/adobeXDOatContact.jpg' /></Fade>
+                                <Fade big><img src='/images/adobeXDOatHome.jpg' alt='Adobe XD Prototype of the Home Page of the BCIT OAT website'/></Fade>
+                                <Fade big><img src='/images/adobeXDOatSchedule.jpg' alt='Adobe XD Prototype of the Schedule Page of the BCIT OAT website'/></Fade>
+                                <Fade big><img src='/images/adobeXDOatCourses.jpg' alt='Adobe XD Prototype of the Courses Page of the BCIT OAT website'/></Fade>
+                                <Fade big><img src='/images/adobeXDOatCertifications.jpg' alt='Adobe XD Prototype of the Certifications Page of the BCIT OAT website'/></Fade>
+                                <Fade big><img src='/images/adobeXDOatCareers.jpg' alt='Adobe XD Prototype of the Careers Page of the BCIT OAT website'/></Fade>
+                                <Fade big><img src='/images/adobeXDOatContact.jpg' alt='Adobe XD Prototype of the Contact Page of the BCIT OAT website'/></Fade>
                             </span>
                         </section>
 
