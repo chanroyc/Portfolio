@@ -805,14 +805,13 @@ section {
   margin: 50px 0 0;
   display: block;
 }
-.page .pageSections section .description img {
-  width: calc(50% - 2px);
-  display: inline-block;
-  border: 1px solid #1ab6ff;
+.page .pageSections section .description h3 {
+  margin: 0 0 18.4px;
 }
-.page .pageSections section .description img:first-of-type {
-  margin: 50px 0 0;
-  width: calc(100% - 2px);
+.page .pageSections section .description img {
+  display: inline-block;
+  box-shadow: 0px 0px 5px 2.5px rgba(0, 0, 0, 0.5);
+  margin: 25px 0;
 }
 .page .pageSections section .description iframe {
   width: 100%;
@@ -834,6 +833,9 @@ section {
 .page .pageSections section .description a {
   text-decoration: none;
   color: #1ab6ff;
+}
+.page .pageSections .section-5 img:nth-of-type(1), .page .pageSections .section-6 img:nth-of-type(1) {
+  margin-top: 0;
 }
 .page .pageSections .content {
   width: 100%;
