@@ -78,94 +78,85 @@ class projectOat extends Component {
                     </div>
 
                     <div className='pageSections'>
-                        <Fade big>
+                        
                         <section className='section-1'>
+                            
                             <span className='sectionNumber'>01</span>
                             <h2>Overview</h2>
                             <span className='description'>
-                                <p>The Office Administrator with Technology program is a hands-on program from British Columbia Institute of Technology. Our team <a href='https://cherylcam.com/'>Cheryl</a>, <a href='https://mariusgessler.com/'>Marius</a>, and <a href='https://ysmatthew.com/ß'>Matthew</a> were tasked to redesign, rebuild, and migrate an existing static website using WordPress.</p>
+                                <Fade big><p>The Office Administrator with Technology program is a hands-on program from British Columbia Institute of Technology. Our team <a href='https://cherylcam.com/'>Cheryl</a>, <a href='https://mariusgessler.com/'>Marius</a>, and <a href='https://ysmatthew.com/ß'>Matthew</a> were tasked to redesign, rebuild, and migrate an existing static website using WordPress.</p></Fade>
                             </span>
                         </section>
-                        </Fade>
 
-                        <Fade big>
+
                         <section className='section-2'>
                             <span className='sectionNumber'>02</span>
                             <h2>Team</h2>
                             <span className='description'>
-                                <p>Roy</p>
-                                <p><a href="https://cherylcam.com/">Cheryl</a></p>
-                                <p><a href="https://mariusgessler.com/">Marius</a></p>
-                                <p><a href="https://ysmatthew.com/">Matthew</a></p>
+                                <Fade big><p>Roy</p></Fade>
+                                <Fade big><p><a href="https://cherylcam.com/">Cheryl</a></p></Fade>
+                                <Fade big><p><a href="https://mariusgessler.com/">Marius</a></p></Fade>
+                                <Fade big><p><a href="https://ysmatthew.com/">Matthew</a></p></Fade>
                             </span>
                         </section>
-                        </Fade>
                         
-                        <Fade big>
                         <section className='section-3'>
                             <span className='sectionNumber'>03</span>
                             <h2>Tools</h2>
                             <span className='description'>
-                                <p>HTML, CSS, Sass, PHP, JavaScript, jQuery, WordPress, Git</p>
-                                <p>InVision, Photoshop, Adobe XD</p>
+                                <Fade big><p>HTML, CSS, Sass, PHP, JavaScript, jQuery, WordPress, Git</p></Fade>
+                                <Fade big><p>InVision, Photoshop, Adobe XD</p></Fade>
                             </span>
                         </section>
-                        </Fade>
 
-                        <Fade big>
                         <section className='section-4'>
                             <span className='sectionNumber'>04</span>
                             <h2>Client Meeting</h2>
                             <span className='description'>
-                                <h3>Requirements Gathering</h3>
-                                <p>Our team met up with our client, the OAT program coordinator, to define the purpose and goals of the website wished to accomplish.</p>
-                                <p>Functional Requirements Include:</p>
+                                <Fade big><h3>Requirements Gathering</h3></Fade>
+                                <Fade big><p>Our team met up with our client, the OAT program coordinator, to define the purpose and goals of the website wished to accomplish.</p></Fade>
+                                <Fade big><p>Functional Requirements Include:</p></Fade>
                                 <ul>
-                                    <li>Upload a schedule in .csv (comma separated values) format</li>
-                                    <li>Easily update schedule</li>
-                                    <li>Show job listings of office administrator positions from external sources</li>
+                                    <Fade big><li>Upload a schedule in .csv (comma separated values) format</li></Fade>
+                                    <Fade big><li>Easily update schedule</li></Fade>
+                                    <Fade big><li>Show job listings of office administrator positions from external sources</li></Fade>
                                 </ul>
 
-                                <h3>Information Architecture</h3>
-                                <p>The information architecture was restructured to improve representations of pages by utilizing different titles and categories. The follwing information architecture also includes page templates we were going to use to build the custom theme.</p>
-                                <img src='/images/oatInformationArchitecture.jpg' />
+                                <Fade big><h3>Information Architecture</h3></Fade>
+                                <Fade big><p>The information architecture was restructured to improve representations of pages by utilizing different titles and categories. The follwing information architecture also includes page templates we were going to use to build the custom theme.</p></Fade>
+                                <Fade big><img src='/images/oatInformationArchitecture.jpg' /></Fade>
                                 
-                                <h3>Content</h3>
-                                <p>The content was to be kept the same as the existing website with an additional feature to be able to change, edit, and add new content on the fly through the back-end of WordPress.</p>
+                                <Fade big><h3>Content</h3></Fade>
+                                <Fade big><p>The content was to be kept the same as the existing website with an additional feature to be able to change, edit, and add new content on the fly through the back-end of WordPress.</p></Fade>
                             </span>
                         </section>
-                        </Fade>
 
-                        <Fade big>
+
                         <section className='section-5'>
                             <span className='sectionNumber'>05</span>
                             <h2>Wireframes</h2>
                             <span className='description'>
-                                <img src='/images/invisionOat.jpg' />
+                                <Fade big><img src='/images/invisionOat.jpg' /></Fade>
                             </span>
                         </section>
-                        </Fade>
 
                         <div className='content portfolioConcepts'></div>
 
-                        <Fade big>
                         <section className='section-6'>
                             <span className='sectionNumber'>06</span>
                             <h2>Prototype</h2>
                             <span className='description'>
-                                <img src='/images/adobeXDOatHome.jpg' />
-                                <img src='/images/adobeXDOatSchedule.jpg' />
-                                <img src='/images/adobeXDOatCourses.jpg' />
-                                <img src='/images/adobeXDOatCertifications.jpg' />
-                                <img src='/images/adobeXDOatCareers.jpg' />
-                                <img src='/images/adobeXDOatContact.jpg' />
+                                <Fade big><img src='/images/adobeXDOatHome.jpg' /></Fade>
+                                <Fade big><img src='/images/adobeXDOatSchedule.jpg' /></Fade>
+                                <Fade big><img src='/images/adobeXDOatCourses.jpg' /></Fade>
+                                <Fade big><img src='/images/adobeXDOatCertifications.jpg' /></Fade>
+                                <Fade big><img src='/images/adobeXDOatCareers.jpg' /></Fade>
+                                <Fade big><img src='/images/adobeXDOatContact.jpg' /></Fade>
                             </span>
                         </section>
-                        </Fade>
 
                         <div className='content portfolioDesign'></div>
 
-                        <Fade big>
                         <section className='section-7'>
                             <span className='sectionNumber'>07</span>
                             <h2>Code</h2>
@@ -173,14 +164,12 @@ class projectOat extends Component {
                                 
                             </span>
                         </section>
-                        </Fade>
                     </div>
 
-                    <Fade big>
+
                     <div className='pageBack'>
-                        <a href='/#oat' className='pageBackBtn'>Back</a>
+                        <Fade big><a href='/#oat' className='pageBackBtn'>Back</a></Fade>
                     </div>
-                    </Fade>
                 </div>
             </>
         )

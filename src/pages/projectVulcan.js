@@ -78,63 +78,56 @@ class projectVulcan extends Component {
                     </div>
 
                     <div className='pageSections'>
-                        <Fade big>
                         <section className='section-1'>
                             <span className='sectionNumber'>01</span>
                             <h2>Overview</h2>
                             <span className='description'>
-                                <p><a href='https://vulcanindustries.com/' rel='nofollow'>Vulcan Industries</a> is a company that fabricates wastewater screening equipment or aiding in the installation, troubleshooting, and repairs.</p>
-                                <p>Using pre-designed mock-ups of <a href='https://vulcanindustries.com/' rel='nofollow'>Vulcan Industries' website</a>, <a href="https://stevecodeguy.com/">Steve</a> and I created a fully reponsive web page. This project was version controlled and stored on <a href="https://github.com/chanroyc/Vulcan-Industries">our team's repository</a>.</p>
+                                <Fade big><p><a href='https://vulcanindustries.com/' rel='nofollow'>Vulcan Industries</a> is a company that fabricates wastewater screening equipment or aiding in the installation, troubleshooting, and repairs.</p></Fade>
+                                <Fade big><p>Using pre-designed mock-ups of <a href='https://vulcanindustries.com/' rel='nofollow'>Vulcan Industries' website</a>, <a href="https://stevecodeguy.com/">Steve</a> and I created a fully reponsive web page. This project was version controlled and stored on <a href="https://github.com/chanroyc/Vulcan-Industries">our team's repository</a>.</p></Fade>
                             </span>
                         </section>
-                        </Fade>
                         
-                        <Fade big>
                         <section className='section-2'>
                             <span className='sectionNumber'>02</span>
                             <h2>Team</h2>
                             <span className='description'>
-                                <p>Roy</p>
-                                <p><a href="https://stevecodeguy.com/">Steve Code Guy</a></p>
+                                <Fade big><p>Roy</p></Fade>
+                                <Fade big><p><a href="https://stevecodeguy.com/">Steve Code Guy</a></p></Fade>
                             </span>
                         </section>
-                        </Fade>
 
-                        <Fade big>
                         <section className='section-3'>
                             <span className='sectionNumber'>03</span>
                             <h2>Development</h2>
                             <span className='description'>
-                                <p>The website was developed using HTML, CSS, Sass, JavaScript, jQuery, gulp.js. <a href='https://stevecodeguy.com'>Steve</a> and I divided the work by separating the page into sections which were then coded separately since the structure of each section was different. In comparison to the official website, we followed current conventions by centering elements using transforms instead of padding elements. Responsiveness across various devices was also enhanced.</p>
+                                <Fade big><p>The website was developed using HTML, CSS, Sass, JavaScript, jQuery, gulp.js. <a href='https://stevecodeguy.com'>Steve</a> and I divided the work by separating the page into sections which were then coded separately since the structure of each section was different. In comparison to the official website, we followed current conventions by centering elements using transforms instead of padding elements. Responsiveness across various devices was also enhanced.</p></Fade>
                             </span>
                         </section>
-                        </Fade>
 
                         <div className='content vulcanDevelopment'></div>
 
-                        <Fade big>
                         <section className='section-4'>
                             <span className='sectionNumber'>04</span>
                             <h2>Code</h2>
                             <span className='description'>
-                                <p>The front page of the website contains a slideshow. I created my own slidehow which features previous/next buttons and pagination.</p>
-                                <p>Initially, repeated clicks on the previous/next buttons were possible before the animations completed which to a waterfall of delayed animations. I created a variable which tracks whether a button is clicked to prevent users from repeatedly clicking to prevent this issue.</p>
-                                <p>The showSlides() and prevSlides() functions could be condensed into 1 function to further optimize efficiency which would lead to cleaner code.</p>
-                                <p>Below is a sample on CodePen.</p>
-                                <p>
-                                    <iframe height="265" scrolling="no" title="Slideshow" src="https://codepen.io/chanroyc-the-looper/embed/abbbVmb?height=265&theme-id=dark&default-tab=js,result" frameBorder="no" allowtransparency="true" allowFullScreen={true} className='codepen'></iframe>
-                                </p>
+                                <Fade big><p>The front page of the website contains a slideshow. I created my own slidehow which features previous/next buttons and pagination.</p></Fade>
+                                <Fade big><p>Initially, repeated clicks on the previous/next buttons were possible before the animations completed which to a waterfall of delayed animations. I created a variable which tracks whether a button is clicked to prevent users from repeatedly clicking to prevent this issue.</p></Fade>
+                                <Fade big><p>The showSlides() and prevSlides() functions could be condensed into 1 function to further optimize efficiency which would lead to cleaner code.</p></Fade>
+                                <Fade big><p>Below is a sample on CodePen.</p></Fade>
+                                <Fade big>
+                                    <p>
+                                        <iframe height="265" scrolling="no" title="Slideshow" src="https://codepen.io/chanroyc-the-looper/embed/abbbVmb?height=265&theme-id=dark&default-tab=js,result" frameBorder="no" allowtransparency="true" allowFullScreen={true} className='codepen'></iframe>
+                                    </p>
+                                </Fade>
                             </span>
                         </section>
-                        </Fade>
 
                         <div className='content vulcanCode'></div>
                     </div>
-                    <Fade big>
+
                     <div className='pageBack'>
-                        <a href='/#vulcan' className='pageBackBtn'>Back</a>
+                        <Fade big><a href='/#vulcan' className='pageBackBtn'>Back</a></Fade>
                     </div>
-                    </Fade>
                 </div>
             </>
         )
