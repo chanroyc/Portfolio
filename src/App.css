@@ -834,6 +834,10 @@ section {
   text-decoration: none;
   color: #1ab6ff;
 }
+.page .pageSections section .description #gist-1b3c4316cc5c298120c0598f02061fa1 {
+  margin: 0;
+  transition: all 2s ease;
+}
 .page .pageSections .section-5 img:nth-of-type(1), .page .pageSections .section-6 img:nth-of-type(1) {
   margin-top: 0;
 }

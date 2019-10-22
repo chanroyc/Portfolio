@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../navigation/Header';
 import Particles from 'react-particles-js';
 import Fade from 'react-reveal';
+import Gist from 'react-gist';
 
 import "../scripts/scrollTop";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -161,7 +162,8 @@ class projectOat extends Component {
                             <span className='sectionNumber'>07</span>
                             <h2>Code</h2>
                             <span className='description'>
-                                
+                                <Fade big><p>The following code snippet parses job postings from an XML document provided by <a href='https://www.civicjobs.ca/' rel='nofollow'>Civic Jobs</a> from their RSS feed. It is parsed manually without the use of plugins by using SimpleXML which is an extension of PHP which converts XML to an object that can be processed with normal property selectors and array iterators.</p></Fade>
+                                <Gist id='1b3c4316cc5c298120c0598f02061fa1' />
                             </span>
                         </section>
                     </div>
