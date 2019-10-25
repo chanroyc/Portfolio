@@ -63,12 +63,12 @@
                 right: -37.5px;
             }
 
-            .projectNumberWrapper.oat{
-                right: -30px;
-            }
-
             .projectNumberWrapper.portfolio{
                 right: -37.5px;
+            }
+
+            .projectNumberWrapper.oat{
+                right: -30px;
             }
 
             .catHide{
@@ -81,19 +81,23 @@
                 width: 90px;
                 height: 61.92px;
                 right: 25%;
-                // top: -86.1667px;
                 top: -61.92px;
                 z-index: -1;
             }
 
             .catHide.vulcan{
-                // height: 125px;
-                // width: 86.1667px;
-                // left: -86.1667px;
                 height: 70px;
                 width: 48.16px;
                 left: -48.16px;
                 bottom: 45%;
+                z-index: -1;
+            }
+
+            .catHide.portfolio{
+                width: 90px;
+                height: 61.92px;
+                right: 25%;
+                top: -61.92px;
                 z-index: -1;
             }
         }
@@ -105,7 +109,7 @@
         }
 
         .projectImageContainer.oat {
-            background: url("comingSoon.jpg");
+            background: url("projectOat.jpg");
             background-position: center;
             background-size: cover;
         }
@@ -195,16 +199,16 @@
                     }
                 }
 
-                .projectNumberWrapper.oat{
-                    right: -45px;
+                .projectNumberWrapper.portfolio{
+                    right: -60px;
                 }
     
                 .projectNumberWrapper.vulcan{
                     right: -57.5px;
                 }
 
-                .projectNumberWrapper.portfolio{
-                    right: -57.5px;
+                .projectNumberWrapper.oat{
+                    right: -45px;
                 }
 
                 .catHide.oat{
@@ -218,16 +222,18 @@
                     width: 86.1667px;
                     left: -86.1667px;
                 }
+
+                .catHide.portfolio{
+                    width: 125px;
+                    height: 86.1667px;
+                    top: -86.1667px;
+                }
             }
 
             .btn {
                 padding: 7.5px 25px;
                 font-size: 28px;
                 bottom: -210px;
-            }
-    
-            .btn:hover {
-                // top: -1%;
             }
         }
     }
@@ -266,16 +272,16 @@
                     }
                 }
 
-                .projectNumberWrapper.oat{
-                    right: -50px;
+                .projectNumberWrapper.portfolio{
+                    right: -65px;
                 }
     
                 .projectNumberWrapper.vulcan{
                     right: -65px;
                 }
 
-                .projectNumberWrapper.portfolio{
-                    right: -65px;
+                .projectNumberWrapper.oat{
+                    right: -50px;
                 }
     
                 .catHide.vulcan{

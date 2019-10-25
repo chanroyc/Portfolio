@@ -14,8 +14,9 @@ class Portfolio extends Component {
 
                             <div className='projectImageContainer portfolio'>
                                 <div className='projectNumberWrapper portfolio'>
-                                    <h1 className='projectNumber portfolio'>01</h1>
+                                    <h1 className='projectNumber portfolio'>03</h1>
                                 </div>
+                                <img src='/images/cat-hide.png' alt='Animated Sketch of a Cat Coming out from Hiding Behind Project Image' className='catHide portfolio'></img>
                             </div>
 
                             <a href="portfolio" className='btn portfolio'>Show</a>

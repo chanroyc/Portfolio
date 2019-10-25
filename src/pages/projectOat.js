@@ -75,7 +75,7 @@ class projectOat extends Component {
                                 <div className="arrow"></div>
                             </div>
                         </div>
-                        <div className='bannerImage portfolio'></div>
+                        <div className='bannerImage oat'></div>
                     </div>
 
                     <div className='pageSections'>
@@ -141,8 +141,6 @@ class projectOat extends Component {
                             </span>
                         </section>
 
-                        <div className='content portfolioConcepts'></div>
-
                         <section className='section-6'>
                             <span className='sectionNumber'>06</span>
                             <h2>Prototype</h2>
@@ -155,8 +153,6 @@ class projectOat extends Component {
                                 <Fade big><img src='/images/adobeXDOatContact.jpg' alt='Adobe XD Prototype of the Contact Page of the BCIT OAT website'/></Fade>
                             </span>
                         </section>
-
-                        <div className='content portfolioDesign'></div>
 
                         <section className='section-7'>
                             <span className='sectionNumber'>07</span>

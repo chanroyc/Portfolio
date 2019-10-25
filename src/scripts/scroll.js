@@ -92,6 +92,9 @@ $(function() {
           $('.projectNumber.portfolio').delay(500).fadeIn(1000);
           $('.projectTitle.portfolio').delay(500).fadeIn(1000);
           $('.btn.portfolio').delay(1500).fadeIn();
+
+          $('.catHide.portfolio').delay(1500).fadeIn(1000);
+          $('.catHide.portfolio').addClass('animated slideInUp');
         }else{
           $('.projectImage.portfolio').removeClass('expand');
           $('.projectTitlePrimary.portfolio').removeClass('animated slideInLeft');
@@ -101,6 +104,9 @@ $(function() {
           $('.projectNumber.portfolio').fadeOut();
           $('.projectTitle.portfolio').fadeOut();
           $('.btn.portfolio').fadeOut();
+
+          $('.catHide.portfolio').fadeOut();
+          $('.catHide.portfolio').removeClass('animated slideInUp');
         }
 
         if (ref==='about'){
@@ -166,13 +172,8 @@ $(function() {
 
         $('.nav-work').on('click', function(){
           $.scrollify.currentIndex = 0;
-          $.scrollify.move("#portfolio");
+          $.scrollify.move("#oat");
         });
-
-        // $('.nav-about').on('click', function(){
-        //   $.scrollify.currentIndex = 0;
-        //   $.scrollify.move("#about");
-        // });
       },
     });
   });

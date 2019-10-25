@@ -15,12 +15,12 @@ class Oat extends Component {
 
                             <div className='projectImageContainer oat'>
                                 <div className='projectNumberWrapper oat'>
-                                    <h1 className='projectNumber oat'>03</h1>    
+                                    <h1 className='projectNumber oat'>01</h1>    
                                 </div>
                                 <img src='/images/cat-hide.png' alt='Animated Sketch of a Cat Coming out from Hiding Behind Project Image' className='catHide oat'></img>
                             </div>
                             
-                            <a href="#oat" className='btn oat'>Show</a>
+                            <a href="oat" className='btn oat'>Show</a>
                         </div>
                     </div>
                 </section>

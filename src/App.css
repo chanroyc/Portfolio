@@ -441,11 +441,11 @@ section {
 .project .projectImage .projectImageContainer .projectNumberWrapper.vulcan {
   right: -37.5px;
 }
-.project .projectImage .projectImageContainer .projectNumberWrapper.oat {
-  right: -30px;
-}
 .project .projectImage .projectImageContainer .projectNumberWrapper.portfolio {
   right: -37.5px;
+}
+.project .projectImage .projectImageContainer .projectNumberWrapper.oat {
+  right: -30px;
 }
 .project .projectImage .projectImageContainer .catHide {
   display: none;
@@ -466,13 +466,20 @@ section {
   bottom: 45%;
   z-index: -1;
 }
+.project .projectImage .projectImageContainer .catHide.portfolio {
+  width: 90px;
+  height: 61.92px;
+  right: 25%;
+  top: -61.92px;
+  z-index: -1;
+}
 .project .projectImage .projectImageContainer.vulcan {
   background: url("projectVulcan.jpg");
   background-position: center;
   background-size: cover;
 }
 .project .projectImage .projectImageContainer.oat {
-  background: url("comingSoon.jpg");
+  background: url("projectOat.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -538,14 +545,14 @@ section {
   .project .projectImage .projectImageContainer .projectNumberWrapper .projectNumber {
     font-size: 6em;
   }
-  .project .projectImage .projectImageContainer .projectNumberWrapper.oat {
-    right: -45px;
+  .project .projectImage .projectImageContainer .projectNumberWrapper.portfolio {
+    right: -60px;
   }
   .project .projectImage .projectImageContainer .projectNumberWrapper.vulcan {
     right: -57.5px;
   }
-  .project .projectImage .projectImageContainer .projectNumberWrapper.portfolio {
-    right: -57.5px;
+  .project .projectImage .projectImageContainer .projectNumberWrapper.oat {
+    right: -45px;
   }
   .project .projectImage .projectImageContainer .catHide.oat {
     width: 125px;
@@ -556,6 +563,11 @@ section {
     height: 125px;
     width: 86.1667px;
     left: -86.1667px;
+  }
+  .project .projectImage .projectImageContainer .catHide.portfolio {
+    width: 125px;
+    height: 86.1667px;
+    top: -86.1667px;
   }
   .project .projectImage .btn {
     padding: 7.5px 25px;
@@ -587,14 +599,14 @@ section {
   .project .projectImage .projectImageContainer .projectNumberWrapper .projectNumber {
     font-size: 7em;
   }
-  .project .projectImage .projectImageContainer .projectNumberWrapper.oat {
-    right: -50px;
+  .project .projectImage .projectImageContainer .projectNumberWrapper.portfolio {
+    right: -65px;
   }
   .project .projectImage .projectImageContainer .projectNumberWrapper.vulcan {
     right: -65px;
   }
-  .project .projectImage .projectImageContainer .projectNumberWrapper.portfolio {
-    right: -65px;
+  .project .projectImage .projectImageContainer .projectNumberWrapper.oat {
+    right: -50px;
   }
   .project .projectImage .projectImageContainer .catHide.vulcan {
     bottom: 15%;
@@ -768,6 +780,9 @@ section {
 }
 .page .pageTop .bannerImage.vulcan {
   background-image: url("vulcanBannerMobile.jpg");
+}
+.page .pageTop .bannerImage.oat {
+  background-image: url("oatBanner.jpg");
 }
 .page .pageTop .bannerImage.about {
   background-image: url("aboutme.jpg");
