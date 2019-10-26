@@ -3,9 +3,8 @@ import Header from '../navigation/Header';
 import Particles from 'react-particles-js';
 import Fade from 'react-reveal';
 
+import Top from "../navigation/Top";
 import "../scripts/scrollTop";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 
 class projectPortfolio extends Component {
     render(){
@@ -128,6 +127,8 @@ class projectPortfolio extends Component {
                     <div className='pageBack'>
                         <Fade big><a href='/#portfolio' className='pageBackBtn'>Back</a></Fade>
                     </div>
+
+                    <Top />
                 </div>
             </>
         )

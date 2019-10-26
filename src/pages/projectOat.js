@@ -4,9 +4,8 @@ import Particles from 'react-particles-js';
 import Fade from 'react-reveal';
 import Gist from 'react-gist';
 
+import Top from "../navigation/Top";
 import "../scripts/scrollTop";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 
 class projectOat extends Component {
     render(){
@@ -168,6 +167,8 @@ class projectOat extends Component {
                     <div className='pageBack'>
                         <Fade big><a href='/#oat' className='pageBackBtn'>Back</a></Fade>
                     </div>
+
+                    <Top />
                 </div>
             </>
         )

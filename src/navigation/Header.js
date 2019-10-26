@@ -27,7 +27,7 @@ class Header extends Component {
                                 <li><a href='/#home' className='nav-home' data-text="Home" onClick={(e)=>this.handleMenu(e)}>Home</a></li>
                                 <li><a href='/#work' className = 'nav-work' data-text="Work" onClick={(e)=>this.handleMenu(e)}>Work</a></li>
                                 <li><a href='/about' className='nav-about' data-text="About" onClick={(e)=>this.handleMenu(e)}>About</a></li>
-                                <li><a href='mailto: contact@chanroyc.ca' className='nav-contact' data-text="Contact" onClick={(e)=>this.handleMenu(e)}>Contact</a></li>
+                                <li><a href='mailto: contact@chanroyc.com' className='nav-contact' data-text="Contact" onClick={(e)=>this.handleMenu(e)}>Contact</a></li>
                             </ul>
 
                             <ul className='socialLinks'>

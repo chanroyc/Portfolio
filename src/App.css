@@ -1018,12 +1018,12 @@ i {
 .top {
   display: none;
   border: none;
-  background-color: black;
   position: fixed;
   z-index: 88;
-  bottom: 0;
-  right: 25px;
-  padding: 0 10px;
+  bottom: 25px;
+  right: 35px;
+  text-decoration: none;
+  color: white;
 }
 
 @media only screen and (min-width: 1024px) {
